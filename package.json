@@ -1,0 +1,22 @@
+{
+  "name": "rafaelfreelancer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RafaelGoulartB/rafaelfreelancer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RafaelGoulartB/rafaelfreelancer/issues"
+  },
+  "homepage": "https://github.com/RafaelGoulartB/rafaelfreelancer#readme",
+  "dependencies": {
+    "font-awesome": "^4.7.0"
+  }
+}

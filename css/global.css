@@ -1,3 +1,4 @@
-body, html, * {
-  font-family: 'Oswald', sans-serif;
+.container {
+  display: flex;
+  /* background-color: #fafafa; */
 }

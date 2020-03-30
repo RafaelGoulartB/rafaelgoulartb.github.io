@@ -11,3 +11,34 @@
   color: #212529;
   font-family: 'Oswald', sans-serif;
 }
+#services .title {
+  font-weight: 500;
+  font-size: 52px;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+
+#services .services {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 125px;
+  padding-left: 24px;
+}
+#services .services .service {
+  width: 30%;
+  border-right: 1px solid #212529;
+  height: 250px;
+}
+#services .services > :last-child {
+  border-right: none;
+}
+#services .services .service .service-title {
+  font-size: 42px;
+  margin-bottom: 30px;
+}
+#services .services .service .service-desc {
+  width: 80%;
+  font-weight: 300;
+  line-height: 1.5em;
+  font-size: 20px;
+}

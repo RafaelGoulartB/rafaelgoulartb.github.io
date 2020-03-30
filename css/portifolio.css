@@ -1,0 +1,13 @@
+#portifolio {
+  display: flex;
+  flex-direction: column;
+  padding-left: 24px;
+  justify-content: center;
+  height: 100vh;
+  background-color: #fafafa;
+  width: 85%;
+  margin-left: 15%;
+  box-sizing: border-box;
+  color: #212529;
+  font-family: 'Oswald', sans-serif;
+}

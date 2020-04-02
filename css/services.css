@@ -11,7 +11,7 @@
   color: #212529;
   font-family: 'Oswald', sans-serif;
 }
-#services .title {
+.title {
   font-weight: 500;
   font-size: 52px;
   text-transform: uppercase;
@@ -41,4 +41,37 @@
   font-weight: 300;
   line-height: 1.5em;
   font-size: 20px;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 24px;
+  margin-bottom: 5em;
+}
+.skills .skill-icons {
+  max-width: 35%;
+}
+.skills .skill-icons th, td {
+  padding: 15px;
+}
+.skills .skill-icons > :first-child > td > td {
+  padding-left: 0;
+}
+.skills .skill-text {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin-right: 10%;
+}
+.skills .skill-text .text {
+  width: 45%;
+  line-height: 1.5em;
+  font-weight: 300;
+  font-size: 20px;
+}
+@media (max-width: 1300px) {
+.skills .skill-text {
+  width: 50%;
+}
 }

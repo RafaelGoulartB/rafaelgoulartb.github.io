@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   padding-left: 24px;
+  padding-top: 100px;
   justify-content: center;
   background-color: #fafafa;
   width: 85%;
@@ -9,4 +10,57 @@
   box-sizing: border-box;
   color: #212529;
   font-family: 'Oswald', sans-serif;
+}
+#portifolio .project {
+  display: flex;
+  margin-bottom: 50px;
+}
+#portifolio .project .content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+#portifolio .project .content .name {
+  display: flex;
+  flex-direction: row;
+}
+#portifolio .project .content .text-box {
+  margin-bottom: 28px;
+}
+#portifolio .project .content .name .label {
+  margin-right: 50px;
+}
+#portifolio .project .content .text-box .label {
+  font-size: 20px;
+  font-weight: 500;
+}
+#portifolio .project .content .text-box .text {
+  font-size: 20px;
+  font-weight: 300;
+}
+#portifolio .project .content .description .text {
+  line-height: 1.5em;
+  max-width: 360px;
+  margin-top: 10px;
+  text-align: left;
+}
+
+#portifolio .project .content .buttons .button a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#portifolio .project .content .buttons .button {
+  background-color: #212529;
+  border: none;
+  max-width: 102px;
+  width: 102px;
+  max-height: 46px;
+  height: 46px;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+#portifolio .project .content .buttons .button:hover {
+  box-shadow: 1px 1px 1px #212529;
 }

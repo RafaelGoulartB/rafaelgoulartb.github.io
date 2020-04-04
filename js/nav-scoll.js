@@ -14,5 +14,3 @@ menuItems.forEach((item) => {
     })
   })
 })
-
-console.log('tes')

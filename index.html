@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="./css/global.css">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/sidebar.css">
+  <link rel="stylesheet" href="./css/mobile-header.css">
   <link rel="stylesheet" href="./css/about.css">
   <link rel="stylesheet" href="./css/portifolio.css">
   <link rel="stylesheet" href="./css/services.css">
@@ -17,6 +18,18 @@
 </head>
 <body>
   <div class="container">
+    <section id="mobile-header">
+      <div class="container">
+        <h1 class="header-name">Rafael Goulart</h1>
+        <i id="toogle-menu" class="fa fa-bars" aria-hidden="true"></i>
+      </div>
+      <div class="menu-items menu-items-disable">
+        <a href="#about">About</a>
+        <a href="#portifolio">Portifolio</a>
+        <a href="#services">Services</a>
+        <a href="#skills">Skills</a>
+      </div>
+    </section>
     <section class="sidebar">
       <img src="./img/foto.png" alt="Foto de perfil">
       <ul class="links">
@@ -207,10 +220,12 @@
             </p>
           </div>
         </div>
+      </section>
       </div>
     </div>
   </div>
 
   <script src="./js/nav-scoll.js"></script>
+  <script src="./js/menu-mobile.js"></script>
 </body>
 </html>

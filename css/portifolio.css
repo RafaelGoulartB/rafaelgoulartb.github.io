@@ -14,11 +14,12 @@
 #portifolio .project {
   display: flex;
   margin-bottom: 50px;
+  padding-left: 24px;
 }
 #portifolio .project .content {
   display: flex;
   flex-direction: column;
-  margin-left: 20px;
+  margin-left: 25px;
 }
 #portifolio .project .content .name {
   display: flex;
@@ -28,7 +29,7 @@
   margin-bottom: 28px;
 }
 #portifolio .project .content .name .label {
-  margin-right: 50px;
+  margin-right: 25px;
 }
 #portifolio .project .content .text-box .label {
   font-size: 20px;

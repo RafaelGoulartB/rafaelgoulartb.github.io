@@ -65,3 +65,22 @@
 #portifolio .project .content .buttons .button:hover {
   box-shadow: 1px 1px 1px #212529;
 }
+
+/* Mobile */
+@media(max-width: 1024px) {
+  #portifolio {
+    margin-left: 0;
+    width: 100vw;
+    padding-left: 12px;
+  }
+  #portifolio .project {
+    padding-left: 0px;
+    flex-direction: column;
+  }
+  #portifolio .project img {
+    margin-bottom: 25px;
+  }
+  #portifolio .project .buttons {
+    align-items: center;
+  }
+}

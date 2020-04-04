@@ -52,3 +52,31 @@
     background-color: #fafafa;
   }
 }
+
+/* Mobile */
+@media(max-width: 1024px) {
+  #about {
+    margin-left: 0;
+    width: 100vw;
+    padding-left: 12px;
+  }
+  #about .title {
+    font-size: 48px;
+  }
+  #about .desc {
+    margin-bottom: 74px;
+  }
+  #about .desc h2 {
+    font-size: 22px;
+  }
+  #about .desc i {
+    font-size: 5px;
+  }
+  #about .desc .email {
+    font-size: 22px;
+  }
+  #about .text {
+    width: 95%;
+    font-size: 18px;
+  }
+}

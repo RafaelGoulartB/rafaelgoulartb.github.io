@@ -79,6 +79,10 @@
   }
   #portifolio .project img {
     margin-bottom: 25px;
+    width: 350px;
+  }
+  #portifolio .project .content .description .text {
+    width: 80%;
   }
   #portifolio .project .buttons {
     align-items: center;

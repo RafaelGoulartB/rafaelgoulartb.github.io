@@ -22,7 +22,7 @@
 
 * Website: https://rafaelgoulartb.github.io/freelancer/
 * Github: [@RafaelGoulartB](https://github.com/RafaelGoulartB)
-* LinkedIn: [@https:\/\/www.linkedin.com\/in\/rafael-goulart-389b3b176\/](https://linkedin.com/in/https:\/\/www.linkedin.com\/in\/rafael-goulart-389b3b176\/)
+* LinkedIn: [@rafael-goulart-389b3b176](https:\/\/www.linkedin.com\/in\/rafael-goulart-389b3b176\/)
 
 ## 🤝 Contributing
 

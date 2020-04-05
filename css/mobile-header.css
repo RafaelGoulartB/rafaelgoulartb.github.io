@@ -11,6 +11,8 @@
     color: #fafafa;
     background-color: #212529;
     width: 100vw;
+    overflow: hidden;
+
   }
   #mobile-header .container {
     display: flex;

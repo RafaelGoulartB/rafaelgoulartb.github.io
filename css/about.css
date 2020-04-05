@@ -59,24 +59,26 @@
     margin-left: 0;
     width: 100vw;
     padding-left: 12px;
+    overflow: hidden;
+
   }
   #about .title {
-    font-size: 48px;
+    font-size: 46px;
   }
   #about .desc {
     margin-bottom: 74px;
   }
   #about .desc h2 {
-    font-size: 22px;
+    font-size: 20px;
   }
   #about .desc i {
     font-size: 5px;
   }
   #about .desc .email {
-    font-size: 22px;
+    font-size: 20px;
   }
   #about .text {
-    width: 95%;
+    width: 90%;
     font-size: 18px;
   }
 }

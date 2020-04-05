@@ -49,6 +49,8 @@
     margin-left: 0;
     width: 100vw;
     padding-left: 12px;
+    overflow: hidden;
+
   }
   #services .services {
     flex-direction: column;
@@ -120,6 +122,8 @@
     margin-left: 0;
     width: 100vw;
     padding-left: 12px;
+    overflow: hidden;
+
   }
   #skills .title {
     margin-bottom: 20px;

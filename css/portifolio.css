@@ -13,8 +13,12 @@
 }
 #portifolio .project {
   display: flex;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   padding-left: 24px;
+}
+#portifolio .project img {
+  border-radius: 8px;
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, .2);
 }
 #portifolio .project .content {
   display: flex;
@@ -72,14 +76,17 @@
     margin-left: 0;
     width: 100vw;
     padding-left: 12px;
+    overflow: hidden;
+
   }
   #portifolio .project {
     padding-left: 0px;
     flex-direction: column;
+    padding-left: 12px;
   }
   #portifolio .project img {
     margin-bottom: 25px;
-    width: 350px;
+    width: 340px;
   }
   #portifolio .project .content .description .text {
     width: 80%;

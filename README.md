@@ -7,9 +7,6 @@
   <a href="https://github.com/RafaelGoulartB/rafaelfreelancer/graphs/commit-activity" target="_blank">
     <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
   </a>
-  <a href="https://github.com/RafaelGoulartB/rafaelfreelancer/blob/master/LICENSE" target="_blank">
-    <img alt="License: MIT" src="https://img.shields.io/github/license/RafaelGoulartB/Portifolio Pessoal" />
-  </a>
 </p>
 
 > Portifolio Pessoal feito com HTML, CSS e JavaScript

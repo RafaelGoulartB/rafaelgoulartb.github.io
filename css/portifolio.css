@@ -49,6 +49,10 @@
   margin-top: 10px;
   text-align: left;
 }
+#portifolio .project .content .description .text .technologies {
+  font-weight: bolder;
+  color: #000000;
+}
 
 #portifolio .project .content .buttons .button a {
   font-size: 16px;

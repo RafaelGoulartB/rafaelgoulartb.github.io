@@ -61,6 +61,8 @@
 }
 
 #portifolio .project .content .buttons .button {
+  color: #ffffff;
+  font-size: 16px;
   background-color: #212529;
   border: none;
   max-width: 102px;

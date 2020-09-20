@@ -1,27 +1,32 @@
 {
-  "name": "rafaelfreelancer",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "next",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/RafaelGoulartB/rafaelfreelancer.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/RafaelGoulartB/rafaelfreelancer/issues"
-  },
-  "homepage": "https://github.com/RafaelGoulartB/rafaelfreelancer#readme",
   "dependencies": {
-    "font-awesome": "^4.7.0"
+    "next": "9.5.3",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
   },
   "devDependencies": {
+    "@types/node": "^14.11.1",
+    "@types/react": "^16.9.49",
+    "@typescript-eslint/eslint-plugin": "^4.1.1",
+    "@typescript-eslint/parser": "^4.1.1",
+    "eslint": "^7.9.0",
     "eslint-config-prettier": "^6.11.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^3.1.4",
-    "prettier": "^2.1.2"
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.20.6",
+    "eslint-plugin-standard": "^4.0.1",
+    "prettier": "^2.1.2",
+    "typescript": "^4.0.3"
   }
 }

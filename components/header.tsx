@@ -32,6 +32,8 @@ const Header: React.FC = props => {
   return (
     <Flex
       as="nav"
+      position="fixed"
+      width="100vw"
       align="center"
       justify="space-between"
       wrap="wrap"

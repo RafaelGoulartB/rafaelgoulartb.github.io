@@ -1,6 +1,7 @@
 import React from 'react'
-import { Text, Flex, Heading } from '@chakra-ui/core'
+import { Text, Flex, Heading, Link, Box } from '@chakra-ui/core'
 import Subtitle from './about/subtitle'
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
 
 const About: React.FC = () => {
   return (
@@ -34,6 +35,15 @@ const About: React.FC = () => {
         React-native and Node.js, I have had 2 year experience in Front and Back
         End. If there is an opportunity for me to do it. I am ready!
       </Text>
+
+      <Flex flexDir="row" mt="8">
+        <Link isExternal mr="4" href="https://www.github.com/RafaelGoulartB">
+          <Box as={FaGithub} size="38px" color="gray.500" />
+        </Link>
+        <Link isExternal href="https://www.linkedin.com/in/rafael-goulartb/">
+          <Box as={FaLinkedin} size="38px" color="gray.500" />
+        </Link>
+      </Flex>
     </Flex>
   )
 }

@@ -9,7 +9,7 @@
   margin-left: 15%;
   box-sizing: border-box;
   color: #212529;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 #about .title {
   font-weight: 500;
@@ -42,9 +42,24 @@
 }
 #about .text {
   font-weight: 300;
+  font-size: 18px;
   width: 65%;
-  line-height: 1.5em;
+  line-height: 1.6em;
+  margin-bottom: 38px;
+}
+#about .logos {
   margin-bottom: 300px;
+}
+#about .logos a {
+  width: 80px;
+  color: #000;
+  text-decoration: none;
+}
+#about .logos a + a {
+  margin-left: 18px;
+}
+#about .logos a i {
+  font-size: 38px;
 }
 /* Large Screen */
 @media (min-width: 1750px) {
@@ -54,13 +69,12 @@
 }
 
 /* Mobile */
-@media(max-width: 1024px) {
+@media (max-width: 1024px) {
   #about {
     margin-left: 0;
     width: 100vw;
     padding-left: 12px;
     overflow: hidden;
-
   }
   #about .title {
     font-size: 46px;

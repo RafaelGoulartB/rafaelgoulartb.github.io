@@ -8,7 +8,7 @@ const About: React.FC = () => {
     <Flex
       id="about"
       flexDir="column"
-      mt={['24', '24', '32', '32']}
+      mt={['32', '32', '40', '40']}
       width={['95%', '90%', '80%', '80%']}
       mx="auto"
       height="100vh"

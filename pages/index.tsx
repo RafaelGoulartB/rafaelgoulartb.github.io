@@ -1,13 +1,14 @@
 import React from 'react'
-import Page from '../components/page'
+
+import { Text } from '@chakra-ui/core'
 
 const Home: React.FC = () => {
   return (
-    <Page>
-      <>
-        <p>Hello World</p>
-      </>
-    </Page>
+    <>
+      <Text color="red.500" fontSize="54px">
+        Hello World
+      </Text>
+    </>
   )
 }
 

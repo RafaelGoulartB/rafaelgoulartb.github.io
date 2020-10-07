@@ -26,6 +26,8 @@ const customTheme: DefaultTheme = {
   },
   fontSizes: {
     ...theme.fontSizes,
+    '3xl': '26px',
+    '4xl': '38px',
     '5xl': '46px',
     '6xl': '52px'
   },

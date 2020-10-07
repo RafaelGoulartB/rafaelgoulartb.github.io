@@ -1,14 +1,14 @@
 import React from 'react'
 
-import { Text } from '@chakra-ui/core'
+import { Grid, Text } from '@chakra-ui/core'
+import Header from '../components/header'
 
 const Home: React.FC = () => {
   return (
-    <>
-      <Text color="red.500" fontSize="54px">
-        Hello World
-      </Text>
-    </>
+    <Grid>
+      <Header />
+      <Text mt="8">Hello World</Text>
+    </Grid>
   )
 }
 

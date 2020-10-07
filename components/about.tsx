@@ -9,8 +9,9 @@ const About: React.FC = () => {
       id="about"
       flexDir="column"
       mt={['24', '24', '32', '32']}
-      width={['95%', '95%', '80%', '80%']}
+      width={['95%', '90%', '80%', '80%']}
       mx="auto"
+      height="100vh"
     >
       <Heading
         as="h1"

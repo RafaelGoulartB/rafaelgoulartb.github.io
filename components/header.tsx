@@ -1,5 +1,5 @@
 import React from 'react'
-import { Flex, Heading, Box, Link, Text, Divider } from '@chakra-ui/core'
+import { Flex, Box, Link, Divider } from '@chakra-ui/core'
 import Logo from './logo'
 
 interface MenuItem {

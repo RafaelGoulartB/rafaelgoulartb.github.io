@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, Text, Image, Flex, Button } from '@chakra-ui/core'
+import { Link, Text, Image, Flex, Button, Heading } from '@chakra-ui/core'
 import { FaGithub, FaGooglePlay, FaLink } from 'react-icons/fa'
 import { ProjectsInterface } from '../../texts/projects'
 
@@ -46,7 +46,7 @@ const Item: React.FC<ProjectsInterface> = ({
               <Button
                 fontWeight="normal"
                 leftIcon={FaGooglePlay}
-                bg="gray.500"
+                bg="blue.500"
                 variantColor="black"
                 color="white"
               >
@@ -60,7 +60,7 @@ const Item: React.FC<ProjectsInterface> = ({
               <Button
                 fontWeight="normal"
                 leftIcon={FaLink}
-                bg="gray.500"
+                bg="blue.500"
                 variantColor="black"
                 color="white"
               >
@@ -97,9 +97,9 @@ const FieldLabel: React.FC = ({ children }) => {
 }
 const FieldText: React.FC = ({ children }) => {
   return (
-    <Text fontSize="xl" fontWeight="light">
+    <Heading as="h2" fontSize="xl" fontWeight="light">
       {children}
-    </Text>
+    </Heading>
   )
 }
 

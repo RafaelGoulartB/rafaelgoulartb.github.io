@@ -8,6 +8,7 @@ import projects from '../texts/projects'
 const Portfolio: React.FC = () => {
   return (
     <Flex
+      as="section"
       id="portfolio"
       flexDir="column"
       width={['95%', '90%', '80%', '80%']}

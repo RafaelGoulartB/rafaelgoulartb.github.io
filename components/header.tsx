@@ -42,6 +42,7 @@ const Header: React.FC = props => {
       paddingY="1.5em"
       backgroundColor="gray.500"
       color="white"
+      zIndex={999}
       {...props}
     >
       <Flex align="center" mr={5}>

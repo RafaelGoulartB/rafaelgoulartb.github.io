@@ -45,7 +45,7 @@
 
 
 # :eyes: Website
-👉  website: https://rafaelgoulartb.github.io/
+👉  website: https://rafaelgoulartb.vercel.app/
 
 # :computer: Technologies
 This project was made using the follow technologies:

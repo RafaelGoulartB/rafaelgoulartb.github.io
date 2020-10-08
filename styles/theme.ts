@@ -23,6 +23,7 @@ const customTheme: DefaultTheme = {
   radii: {
     ...theme.radii,
     sm: '4px',
+    lg: '15px'
   },
   fontSizes: {
     ...theme.fontSizes,
@@ -36,6 +37,10 @@ const customTheme: DefaultTheme = {
     gray: {
       ...theme.colors.gray,
       500: "#212529"
+    },
+    blue: {
+      ...theme.colors.blue,
+      500: '#4070f4'
     }
   },
   breakpoints

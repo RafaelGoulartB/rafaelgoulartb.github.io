@@ -3,7 +3,7 @@ import { Flex, SimpleGrid } from '@chakra-ui/core'
 import SectionTitle from './section-title'
 import Item from './portfolio/item'
 
-import projects from '../projects'
+import projects from '../texts/projects'
 
 const Portfolio: React.FC = () => {
   return (
@@ -12,7 +12,6 @@ const Portfolio: React.FC = () => {
       flexDir="column"
       width={['95%', '90%', '80%', '80%']}
       mx="auto"
-      height="100vh"
     >
       <SectionTitle>Portfolio</SectionTitle>
 

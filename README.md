@@ -39,13 +39,14 @@
 
 * [Website](#eyes-website)
 * [Technologies](#computer-technologies)
+* [How to run](#construction_worker-how-to-run)
 * [Found a bug? Missing a specific feature?](#bug-issues)
 * [Contributing](#tada-contributing)
 * [License](#closed_book-license)
 
 
 # :eyes: Website
-👉  website: https://rafaelgoulartb.vercel.app/
+👉  Website: https://rafaelgoulartb.vercel.app/
 
 # :computer: Technologies
 This project was made using the follow technologies:
@@ -53,6 +54,18 @@ This project was made using the follow technologies:
 * [Next.js](https://nextjs.org/) - To SSR and routes control     
 * [Vercel](https://vercel.com/) - To deploy website     
 
+# :construction_worker: How to run
+### Install Dependencies
+```bash
+yarn install
+```
+### Run Aplication
+```bash 
+yarn dev 
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<br>
 
 # :bug: Issues
 

@@ -2,7 +2,11 @@ import React from 'react'
 import { Heading, Text, Flex, Box } from '@chakra-ui/core'
 import { FaCircle } from 'react-icons/fa'
 
-const Subtitle: React.FC = () => {
+interface SubtitleInterface {
+  email: string
+}
+
+const Subtitle: React.FC<SubtitleInterface> = ({ email }) => {
   return (
     <Flex
       flexDir="row"
@@ -21,7 +25,7 @@ const Subtitle: React.FC = () => {
       <Box as={FaCircle} size="8px" mx={['1', '2', '3', '3']} />
 
       <Text fontWeight="light" textTransform="uppercase">
-        rafaelgoulartb@gmail.com
+        {email}
       </Text>
     </Flex>
   )

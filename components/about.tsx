@@ -3,6 +3,8 @@ import { Text, Flex, Heading, Link, Box } from '@chakra-ui/core'
 import Subtitle from './about/subtitle'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 
+import about from '../texts/about'
+
 const About: React.FC = () => {
   return (
     <Flex
@@ -20,9 +22,9 @@ const About: React.FC = () => {
         fontWeight="bold"
         mb="4"
       >
-        Rafael Goulart
+        {about.name}
       </Heading>
-      <Subtitle />
+      <Subtitle email={about.email} />
 
       <Text
         fontWeight="light"
@@ -31,10 +33,7 @@ const About: React.FC = () => {
         fontSize={['md', 'lg', 'lg', 'lg']}
         lineHeight="lg"
       >
-        Hello, I am currently working as a freelance Fullstack, Mobile Developer
-        and Shopify Developer using technologies like React, Next.js,
-        React-native and Node.js, I have had 2 year experience in Front and Back
-        End. If there is an opportunity for me to do it. I am ready!
+        {about.description}
       </Text>
 
       <Flex flexDir="row" mt="8">

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text, Flex, Heading, Link, Box } from '@chakra-ui/core'
+import { Text, Flex, Heading, Link, Box, Tooltip } from '@chakra-ui/core'
 import Subtitle from './about/subtitle'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 
@@ -37,12 +37,30 @@ const About: React.FC = () => {
       </Text>
 
       <Flex flexDir="row" mt="8">
-        <Link isExternal mr="4" href="https://www.github.com/RafaelGoulartB">
-          <Box as={FaGithub} size="38px" color="gray.500" />
-        </Link>
-        <Link isExternal href="https://www.linkedin.com/in/rafael-goulartb/">
-          <Box as={FaLinkedin} size="38px" color="gray.500" />
-        </Link>
+        <Tooltip
+          hasArrow
+          aria-label="Github Profile"
+          label="Linkedin Profile"
+          placement="top"
+          bg="gray.500"
+          color="white"
+        >
+          <Link isExternal mr="4" href="https://www.github.com/RafaelGoulartB">
+            <Box as={FaGithub} size="38px" color="gray.500" />
+          </Link>
+        </Tooltip>
+        <Tooltip
+          hasArrow
+          aria-label="Linkedin Profile"
+          label="Linkedin Profile"
+          placement="top"
+          bg="gray.500"
+          color="white"
+        >
+          <Link isExternal href="https://www.linkedin.com/in/rafael-goulartb/">
+            <Box as={FaLinkedin} size="38px" color="gray.500" />
+          </Link>
+        </Tooltip>
       </Flex>
     </Flex>
   )

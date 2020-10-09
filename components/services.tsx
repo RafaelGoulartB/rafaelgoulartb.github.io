@@ -1,7 +1,7 @@
 import React from 'react'
 import { Flex } from '@chakra-ui/core'
 import SectionTitle from './section-title'
-import ServicesItem from './services/item'
+import ServicesItem from './services/ServicesItem'
 
 import services from '../texts/services'
 

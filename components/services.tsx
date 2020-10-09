@@ -20,6 +20,7 @@ const Services: React.FC = () => {
       <Flex flexWrap="wrap">
         {services.map(service => (
           <ServicesItem
+            key={service.name}
             name={service.name}
             description={service.description}
             icon={service.icon}

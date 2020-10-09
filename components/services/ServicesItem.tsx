@@ -22,7 +22,7 @@ const ServicesItem: React.FC<ServicesInterface> = ({
       boxShadow="0px 0px 20px rgb(231, 231, 231)"
       transition="all 0.5s"
       _hover={{
-        transform: "scale(1.05)"
+        transform: 'scale(1.05)'
       }}
     >
       <Box as={icon} size="50px" color="blue.500" alignSelf="center" />

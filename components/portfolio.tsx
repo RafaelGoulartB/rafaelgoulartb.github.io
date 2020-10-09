@@ -19,6 +19,7 @@ const Portfolio: React.FC = () => {
       <SimpleGrid columns={[1, 1, 1, 1, 2]} spacing={16}>
         {projects.map(project => (
           <Item
+            key={project.name}
             name={project.name}
             description={project.description}
             imgSource={project.imgSource}

@@ -1,8 +1,8 @@
-import React from 'react';
+import React from 'react'
 import { Box, Text, Heading, PseudoBox } from '@chakra-ui/core'
 import { SkillsInterface } from '../../texts/skills'
 
-const SkillsItem: React.FC<SkillsInterface> = ({name, description, icon}) => {
+const SkillsItem: React.FC<SkillsInterface> = ({ name, description, icon }) => {
   return (
     <PseudoBox
       display="flex"
@@ -18,10 +18,10 @@ const SkillsItem: React.FC<SkillsInterface> = ({name, description, icon}) => {
       boxShadow="0px 0px 20px rgb(231, 231, 231)"
       transition="all 0.5s"
       _hover={{
-        transform: "scale(1.05)"
+        transform: 'scale(1.05)'
       }}
     >
-      <Box as={icon} size="50px" color="blue.500" alignSelf="center"/>
+      <Box as={icon} size="50px" color="blue.500" alignSelf="center" />
       <Heading as="h2" fontSize="xl" py="5">
         {name}
       </Heading>
@@ -29,7 +29,7 @@ const SkillsItem: React.FC<SkillsInterface> = ({name, description, icon}) => {
         {description}
       </Text>
     </PseudoBox>
-  );
+  )
 }
 
-export default SkillsItem;
+export default SkillsItem

@@ -40,7 +40,7 @@ const About: React.FC = () => {
         <Tooltip
           hasArrow
           aria-label="Github Profile"
-          label="Linkedin Profile"
+          label="Github Profile"
           placement="top"
           bg="gray.500"
           color="white"

@@ -78,6 +78,9 @@ const Item: React.FC<ProjectsInterface> = ({
                   bg="blue.500"
                   variantColor="black"
                   color="white"
+                  _hover={{
+                    textDecoration: 'underline'
+                  }}
                 >
                   Play Store
                 </Button>
@@ -100,6 +103,9 @@ const Item: React.FC<ProjectsInterface> = ({
                   bg="blue.500"
                   variantColor="black"
                   color="white"
+                  _hover={{
+                    textDecoration: 'underline'
+                  }}
                 >
                   Website
                 </Button>

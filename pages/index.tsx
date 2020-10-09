@@ -5,6 +5,7 @@ import Header from '../components/header'
 import About from '../components/about'
 import Portfolio from '../components/portfolio'
 import Services from '../components/services'
+import Skills from '../components/skills'
 
 const Home: React.FC = () => {
   return (
@@ -13,6 +14,7 @@ const Home: React.FC = () => {
       <About />
       <Portfolio />
       <Services />
+      <Skills />
     </Grid>
   )
 }

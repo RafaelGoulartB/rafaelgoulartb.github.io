@@ -23,6 +23,7 @@ const Portfolio: React.FC = () => {
             name={project.name}
             description={project.description}
             imgSource={project.imgSource}
+            skills={project.skills}
             websiteUrl={project.websiteUrl}
             githubUrl={project.githubUrl}
             playStoreUrl={project.playStoreUrl}

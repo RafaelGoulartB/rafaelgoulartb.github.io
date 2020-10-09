@@ -6,7 +6,8 @@ import {
   Flex,
   Button,
   Heading,
-  Tooltip
+  Tooltip,
+  Badge
 } from '@chakra-ui/core'
 import { FaGithub, FaGooglePlay, FaLink } from 'react-icons/fa'
 import { ProjectsInterface } from '../../texts/projects'
@@ -15,6 +16,7 @@ const Item: React.FC<ProjectsInterface> = ({
   name,
   description,
   imgSource,
+  skills,
   githubUrl,
   websiteUrl,
   playStoreUrl
@@ -43,10 +45,22 @@ const Item: React.FC<ProjectsInterface> = ({
           <FieldText>{name}</FieldText>
         </Flex>
         {/* Description */}
-        <Flex flexDir="column" my="6">
+        <Flex flexDir="column" mt="6" mb="3">
           <FieldLabel>Description</FieldLabel>
           <FieldText>{description}</FieldText>
         </Flex>
+
+        {/* Badge */}
+        {skills && (
+          <Flex mb="6">
+            {skills.map(skill => (
+              <Badge mr="2" bg="blue.500" color="white">
+                {skill}
+              </Badge>
+            ))}
+          </Flex>
+        )}
+
         {/* Buttons */}
         <Flex flexDir="row">
           {playStoreUrl && (

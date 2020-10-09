@@ -6,6 +6,7 @@ import About from '../components/about'
 import Portfolio from '../components/portfolio'
 import Services from '../components/services'
 import Skills from '../components/skills'
+import Footer from '../components/footer'
 
 const Home: React.FC = () => {
   return (
@@ -15,6 +16,7 @@ const Home: React.FC = () => {
       <Portfolio />
       <Services />
       <Skills />
+      <Footer />
     </Grid>
   )
 }

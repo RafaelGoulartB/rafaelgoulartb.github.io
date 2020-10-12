@@ -31,7 +31,7 @@ const projects: ProjectsInterface[] = [
     imgSource: '/projects/ramdomapp-min.png',
     skills: ['React Native', 'Styled-components', 'Typescript'],
     playStoreUrl: 'https://play.google.com/store/apps/details?id=com.rafagoulartb.randomapp',
-    githubUrl: 'https://github.com/RafaelGoulartB/random-generator-app',
+    githubUrl: 'https://github.com/RafaelGoulartB/rpg-dice-roller',
   },
   {
     name: 'Proffy',

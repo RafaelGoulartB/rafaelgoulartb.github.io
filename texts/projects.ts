@@ -10,6 +10,14 @@ export interface ProjectsInterface {
 
 const projects: ProjectsInterface[] = [
   {
+    name: 'Coinbase Website',
+    description: 'Cryptocurrency & Giftcard Exchange Website - Landing Page. Made with Next.js | Chakra UI',
+    imgSource: '/projects/coinbase-web-min.png',
+    skills: ['Next.js', 'GraphQL', 'Typescript'],
+    websiteUrl: 'https://coinbase-web.vercel.app/',
+    githubUrl: 'https://github.com/RafaelGoulartB/coinbase-web',
+  },
+  {
     name: 'Quantum E-commerce',
     description: 'E-commerce project that sell tech products, made using Next.js with Apollo and GraphQL.',
     imgSource: '/projects/quantum-ecommerce-min.png',
@@ -54,14 +62,6 @@ const projects: ProjectsInterface[] = [
     imgSource: '/projects/bethehero-min.png',
     skills: ['React.js', 'React Native', 'Node.js'],
     githubUrl: 'https://github.com/RafaelGoulartB/be-the-hero',
-  },
-  {
-    name: 'AudioBook Player',
-    description: 'Clone of Spotify to listen Audio Books - Using pure javascript.',
-    imgSource: '/projects/audiobookapp-min.png',
-    skills: ['HTML', 'CSS', 'Javascript'],
-    websiteUrl: 'https://rafaelgoulartb.github.io/audio-book-website/',
-    githubUrl: 'https://github.com/RafaelGoulartB/audio-book-website'
   },
 ]
 

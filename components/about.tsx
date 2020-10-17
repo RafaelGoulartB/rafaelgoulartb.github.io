@@ -3,7 +3,7 @@ import { Text, Flex, Heading, Link, Box, Tooltip } from '@chakra-ui/core'
 import Subtitle from './about/subtitle'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 
-import about from '../texts/about'
+import about from '../data/about'
 
 const About: React.FC = () => {
   return (

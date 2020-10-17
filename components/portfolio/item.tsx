@@ -10,7 +10,7 @@ import {
   Badge
 } from '@chakra-ui/core'
 import { FaGithub, FaGooglePlay, FaLink } from 'react-icons/fa'
-import { ProjectsInterface } from '../../texts/projects'
+import { ProjectsInterface } from '../../data/projects'
 
 const Item: React.FC<ProjectsInterface> = ({
   name,

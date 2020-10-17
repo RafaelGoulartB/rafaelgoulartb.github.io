@@ -2,7 +2,7 @@ import React from 'react'
 import { Flex } from '@chakra-ui/core'
 import SectionTitle from './section-title'
 import SkillsItem from './skills/SkillsItem'
-import skills from '../texts/skills'
+import skills from '../data/skills'
 
 const Skills: React.FC = () => {
   return (

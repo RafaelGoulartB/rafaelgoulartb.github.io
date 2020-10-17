@@ -13,7 +13,7 @@ const projects: ProjectsInterface[] = [
     name: 'Coinbase Website',
     description: 'Cryptocurrency & Giftcard Exchange Website - Landing Page. Made with Next.js | Chakra UI',
     imgSource: '/projects/coinbase-web-min.png',
-    skills: ['Next.js', 'GraphQL', 'Typescript'],
+    skills: ['Next.js', 'Chakra UI', 'Typescript'],
     websiteUrl: 'https://coinbase-web.vercel.app/',
     githubUrl: 'https://github.com/RafaelGoulartB/coinbase-web',
   },

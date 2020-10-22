@@ -10,10 +10,7 @@ class MyDocument extends Document {
             rel="stylesheet"
           />
           <meta title="Rafael Goulart - FullStack Developer Freelancer" />
-          <meta
-            name="description"
-            content="I'm Rafael Goulart, Full Stack Developer and I work with React.js, Next.js, React Native and Node.js, I’m currently working on freelance projects."
-          />
+          <link rel="manifest" href="/manifest.json" />
           <meta name="theme-color" content="#fafafa" />
           <link rel="icon" href="/favicons/favicon.ico" />
           <meta name="application-name" content="&nbsp;" />

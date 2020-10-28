@@ -54,7 +54,7 @@ const Item: React.FC<ProjectsInterface> = ({
         {skills && (
           <Flex mb="6">
             {skills.map(skill => (
-              <Badge mr="2" bg="gray.200" color="white">
+              <Badge key={skill} mr="2" bg="gray.200" color="white">
                 {skill}
               </Badge>
             ))}

@@ -2,13 +2,14 @@ import React from 'react'
 import {
   Link,
   Text,
-  Image,
+  Box,
   Flex,
   Button,
   Heading,
   Tooltip,
   Badge
 } from '@chakra-ui/core'
+import Image from 'next/image'
 import { FaGithub, FaGooglePlay, FaLink } from 'react-icons/fa'
 import { ProjectsInterface } from '../../data/projects'
 
@@ -29,13 +30,9 @@ const Item: React.FC<ProjectsInterface> = ({
         mr={['0', '0', '8', '8']}
         alignSelf="center"
       >
-        <Image
-          src={imgSource}
-          alt={name}
-          maxW="340px"
-          borderRadius="md"
-          boxShadow="0px 3px 3px rgba(0, 0, 0, 0.25)"
-        />
+        <Box borderRadius="md" boxShadow="0px 3px 3px rgba(0, 0, 0, 0.25)">
+          <Image src={imgSource} width="340" height="240" />
+        </Box>
       </Link>
 
       <Flex flexDir="column" alignItems="flex-start">

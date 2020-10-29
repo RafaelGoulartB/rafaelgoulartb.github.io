@@ -1,5 +1,5 @@
 import React from 'react'
-import { Heading, Text, Flex, Box } from '@chakra-ui/core'
+import { Heading, Text, Flex, Box, Link } from '@chakra-ui/core'
 import { FaCircle } from 'react-icons/fa'
 
 interface SubtitleInterface {
@@ -12,7 +12,7 @@ const Subtitle: React.FC<SubtitleInterface> = ({ email }) => {
       flexDir="row"
       alignItems="center"
       textTransform="uppercase"
-      fontSize={['xl', 'xl', '3xl', '3xl']}
+      fontSize={['md', 'md', '3xl', '3xl']}
       color="gray.500"
     >
       <Heading as="h2" fontSize={['xl', 'xl', '3xl', '3xl']}>
@@ -22,11 +22,17 @@ const Subtitle: React.FC<SubtitleInterface> = ({ email }) => {
         <Text display="inline">Stack</Text>
       </Heading>
 
-      <Box as={FaCircle} size="8px" mx={['1', '2', '3', '3']} />
+      <Box
+        as={FaCircle}
+        size={['6px', '6px', '8px', '8px', '8px']}
+        mx={['1', '2', '3', '3']}
+      />
 
-      <Text fontWeight="light" textTransform="uppercase">
-        {email}
-      </Text>
+      <Link href="mailto:rafagoulartb@gmail.com" isExternal>
+        <Text fontWeight="light" textTransform="uppercase">
+          {email}
+        </Text>
+      </Link>
     </Flex>
   )
 }

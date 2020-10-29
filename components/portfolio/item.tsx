@@ -37,7 +37,7 @@ const Item: React.FC<ProjectsInterface> = ({
 
       <Flex flexDir="column" alignItems="flex-start">
         {/* Name */}
-        <Flex flexDir="row" mt={['6', '6', '6', '0', '0']}>
+        <Flex flexDir="row" alignItems="center" mt={['6', '6', '6', '0', '0']}>
           <FieldLabel>Name</FieldLabel>
           <FieldText>{name}</FieldText>
         </Flex>

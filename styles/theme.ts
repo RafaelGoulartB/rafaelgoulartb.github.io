@@ -10,9 +10,9 @@ const breakpoints = ["360px", "768px", "1024px", "1500px"];
 const customTheme: DefaultTheme = {
   ...theme,
   fonts: {
-    body: "Oswald, sans- serif",
-    heading: "Oswald, sans-serif",
-    mono: "Oswald, sans-serif",
+    body: "Poppins, sans- serif",
+    heading: "Poppins, sans-serif",
+    mono: "Poppins, sans-serif",
   },
   fontWeights: {
     ...theme.fontWeights,

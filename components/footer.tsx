@@ -1,6 +1,7 @@
 import React from 'react'
 import { Flex, Box, Link, Tooltip } from '@chakra-ui/core'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
+import { SiGmail } from 'react-icons/si'
 
 const Footer: React.FC = () => {
   return (
@@ -24,7 +25,7 @@ const Footer: React.FC = () => {
         bg="white"
         color="black"
       >
-        <Link isExternal mr="4" href="https://www.github.com/RafaelGoulartB">
+        <Link isExternal href="https://www.github.com/RafaelGoulartB">
           <Box as={FaGithub} size="38px" color="white" />
         </Link>
       </Tooltip>
@@ -37,8 +38,25 @@ const Footer: React.FC = () => {
         bg="white"
         color="black"
       >
-        <Link isExternal href="https://www.linkedin.com/in/rafael-goulartb/">
+        <Link
+          isExternal
+          mx="8"
+          href="https://www.linkedin.com/in/rafael-goulartb/"
+        >
           <Box as={FaLinkedin} size="38px" color="white" />
+        </Link>
+      </Tooltip>
+
+      <Tooltip
+        hasArrow
+        aria-label="Mail Me"
+        label="Mail Me"
+        placement="top"
+        bg="white"
+        color="black"
+      >
+        <Link isExternal href="mailto:rafagoulartb@gmail.com">
+          <Box as={SiGmail} size="38px" color="white" />
         </Link>
       </Tooltip>
     </Flex>

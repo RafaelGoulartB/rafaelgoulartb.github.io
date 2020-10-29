@@ -18,7 +18,7 @@ const About: React.FC = () => {
       <Heading
         as="h1"
         textTransform="uppercase"
-        fontSize={['4xl', '4xl', '6xl', '6xl']}
+        fontSize={['3xl', '4xl', '6xl', '6xl']}
         fontWeight="bold"
         mb="4"
       >
@@ -29,7 +29,7 @@ const About: React.FC = () => {
       <Text
         fontWeight="light"
         mt="8"
-        maxW="720px"
+        maxW="840px"
         fontSize={['md', 'lg', 'lg', 'lg']}
         lineHeight="lg"
       >

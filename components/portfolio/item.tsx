@@ -11,7 +11,7 @@ import {
 } from '@chakra-ui/core'
 import Image from 'next/image'
 import { FaGithub, FaGooglePlay, FaLink } from 'react-icons/fa'
-import { ProjectsInterface } from '../../data/projects'
+import { ProjectsInterface } from '../../data/en/projects'
 
 const Item: React.FC<ProjectsInterface> = ({
   name,

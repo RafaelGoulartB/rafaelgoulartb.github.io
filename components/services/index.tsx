@@ -3,7 +3,7 @@ import { Flex } from '@chakra-ui/core'
 import SectionTitle from '../section-title'
 import ServicesItem from './item'
 
-import services from '../../data/services'
+import services from '../../data/en/services'
 
 const Services: React.FC = () => {
   return (

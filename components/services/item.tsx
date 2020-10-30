@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box, Heading, PseudoBox, Text } from '@chakra-ui/core'
-import { ServicesInterface } from '../../data/services'
+import { ServicesInterface } from '../../data/en/services'
 
 const ServicesItem: React.FC<ServicesInterface> = ({
   name,

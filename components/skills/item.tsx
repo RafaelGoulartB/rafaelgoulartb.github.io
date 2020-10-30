@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box, Text, Heading, PseudoBox } from '@chakra-ui/core'
-import { SkillsInterface } from '../../data/skills'
+import { SkillsInterface } from '../../data/en/skills'
 
 const SkillsItem: React.FC<SkillsInterface> = ({ name, description, icon }) => {
   return (

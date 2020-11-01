@@ -2,7 +2,7 @@ import React from 'react'
 import { Box, Text, Heading, PseudoBox } from '@chakra-ui/core'
 import { SkillsInterface } from '../../data/en/skills'
 
-const SkillsItem: React.FC<SkillsInterface> = ({ name, description, icon }) => {
+const SkillsItem: React.FC<SkillsInterface> = ({ name, expTime, icon }) => {
   return (
     <PseudoBox
       display="flex"
@@ -26,7 +26,7 @@ const SkillsItem: React.FC<SkillsInterface> = ({ name, description, icon }) => {
         {name}
       </Heading>
       <Text lineHeight="tall" fontWeight="light" fontSize="lg">
-        {description}
+        {expTime()}
       </Text>
     </PseudoBox>
   )

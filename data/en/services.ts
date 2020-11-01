@@ -12,17 +12,17 @@ export interface ServicesInterface {
 const services: ServicesInterface[] = [
   {
     name: 'Website Creation',
-    description: 'Development of professional websites, web systems, blogs and online stores focused on results',
+    description: 'Development of professional websites, web systems, blogs and online stores focused on results.',
     icon: MdDesktopWindows
   },
   {
     name: 'Responsive Websites',
-    description: 'Creating responsive websites for the best viewing on mobile devices with quality on all screens',
+    description: 'Creating responsive websites for the best viewing on mobile devices with quality on all screens.',
     icon: MdLaptopMac
   },
   {
     name: 'Mobile Applications',
-    description: 'Development of multi-platform apps, using modern like React Native, Expo and Firebase',
+    description: 'Development of multi-platform apps, using modern like React Native, Expo and Firebase.',
     icon: GiSmartphone
   },
   {

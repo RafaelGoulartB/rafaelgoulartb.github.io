@@ -1,57 +1,60 @@
 import { FaReact, FaNodeJs, FaHtml5, FaCss3 } from 'react-icons/fa'
 import { SiNextDotJs, SiGraphql, SiTypescript } from 'react-icons/si'
 import { ImGit } from 'react-icons/im'
+import getExperienceTime from '../../utils/getExperienceTime'
 
 export interface SkillsInterface {
   name: string
-  description: string
+  expTime: () => string
   icon?: any
 }
+
+
 
 const skills: SkillsInterface[] = [
   {
     name: 'React.js',
-    description: '2 years experience',
+    expTime: () => getExperienceTime(new Date("2019-04-10")),
     icon: FaReact
   },
   {
     name: 'Next.js',
-    description: '1 years experience',
+    expTime: () => getExperienceTime(new Date("2020-05-10")),
     icon: SiNextDotJs
   },
   {
+    name: 'React Native',
+    expTime: () => getExperienceTime(new Date("2019-04-10")),
+    icon: FaReact
+  },
+  {
     name: 'Node.js',
-    description: '2 years experience',
+    expTime: () => getExperienceTime(new Date("2019-02-10")),
     icon: FaNodeJs
   },
   {
     name: 'GraphQL',
-    description: '6 months experience',
+    expTime: () => getExperienceTime(new Date("2020-06-10")),
     icon: SiGraphql
   },
   {
-    name: 'React Native',
-    description: '2 years experience',
-    icon: FaReact
-  },
-  {
     name: 'Git',
-    description: '3 years experience',
+    expTime: () => getExperienceTime(new Date("2018-06-10")),
     icon: ImGit
   },
   {
     name: 'Typescript',
-    description: '2 years experience',
+    expTime: () => getExperienceTime(new Date("2020-03-10")),
     icon: SiTypescript
   },
   {
     name: 'HTML',
-    description: '3 years experience',
+    expTime: () => getExperienceTime(new Date("2018-01-10")),
     icon: FaHtml5
   },
   {
     name: 'CSS',
-    description: '3 years experience',
+    expTime: () => getExperienceTime(new Date("2018-01-10")),
     icon: FaCss3
   },
 ]

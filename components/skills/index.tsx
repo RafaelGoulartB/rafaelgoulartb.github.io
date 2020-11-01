@@ -20,7 +20,7 @@ const Skills: React.FC = () => {
           <SkillsItem
             key={skill.name}
             name={skill.name}
-            description={skill.description}
+            expTime={skill.expTime}
             icon={skill.icon}
           />
         ))}

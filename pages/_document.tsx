@@ -7,6 +7,12 @@ class MyDocument extends Document {
         <Head>
           <link
             rel="preload"
+            href="/fonts/poppins-v13-latin-300.woff2"
+            as="font"
+            crossOrigin=""
+          />
+          <link
+            rel="preload"
             href="/fonts/poppins-v13-latin-regular.woff2"
             as="font"
             crossOrigin=""

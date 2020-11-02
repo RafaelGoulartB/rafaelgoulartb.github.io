@@ -5,6 +5,24 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
+          <link
+            rel="preload"
+            href="/fonts/poppins-v13-latin-300.woff2"
+            as="font"
+            crossOrigin=""
+          />
+          <link
+            rel="preload"
+            href="/fonts/poppins-v13-latin-regular.woff2"
+            as="font"
+            crossOrigin=""
+          />
+          <link
+            rel="preload"
+            href="/fonts/poppins-v13-latin-500.woff2"
+            as="font"
+            crossOrigin=""
+          />
           <meta title="Rafael Goulart - FullStack Developer Freelancer" />
           <link rel="manifest" href="/manifest.json" />
           <meta name="theme-color" content="#fafafa" />

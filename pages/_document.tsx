@@ -11,6 +11,12 @@ class MyDocument extends Document {
             as="font"
             crossOrigin=""
           />
+          <link
+            rel="preload"
+            href="/fonts/poppins-v13-latin-regular.woff2"
+            as="font"
+            crossOrigin=""
+          />
           <meta title="Rafael Goulart - FullStack Developer Freelancer" />
           <link rel="manifest" href="/manifest.json" />
           <meta name="theme-color" content="#fafafa" />

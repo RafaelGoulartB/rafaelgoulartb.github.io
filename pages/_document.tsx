@@ -1,10 +1,50 @@
+import { Fragment } from 'react'
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 
 class MyDocument extends Document {
+  static async getInitialProps(ctx) {
+    const originalRenderPage = ctx.renderPage
+
+    const initialProps = await Document.getInitialProps(ctx)
+
+    // Check if in production
+    const isProduction = process.env.NODE_ENV === 'production'
+
+    return {
+      ...initialProps,
+      isProduction
+    }
+  }
+
   render(): JSX.Element {
+    const { isProduction } = this.props
+
     return (
       <Html lang="en">
         <Head>
+          {isProduction && (
+            <Fragment>
+              {/* Global Site Tag (gtag.js) - Google Analytics */}
+              <script
+                async
+                src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GA_TRACKING_ID}`}
+              />
+              <script
+                dangerouslySetInnerHTML={{
+                  __html: `
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+
+                    gtag('config', '${process.env.GA_TRACKING_ID}', {
+                      page_path: window.location.pathname,
+                    });
+                  `
+                }}
+              />
+            </Fragment>
+          )}
+
           <link
             href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
             rel="stylesheet"

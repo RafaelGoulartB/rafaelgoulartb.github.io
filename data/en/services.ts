@@ -1,3 +1,5 @@
+import { IconType } from "react-icons/lib";
+
 import { FaServer } from 'react-icons/fa'
 import { GiSmartphone } from 'react-icons/gi'
 import { MdDesktopWindows } from 'react-icons/md'
@@ -6,7 +8,7 @@ import { MdLaptopMac } from 'react-icons/md'
 export interface ServicesInterface {
   name: string
   description: string
-  icon?: any
+  icon?: IconType
 }
 
 const services: ServicesInterface[] = [

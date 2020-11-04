@@ -72,9 +72,9 @@ const Header: React.FC = props => {
         marginTop={['20px', '20px', 'auto', 'auto']}
       >
         <Divider />
-        {navLinks.map(items => (
-          <MenuItems onClick={handleToggle} link={items.link}>
-            {items.label}
+        {navLinks.map(item => (
+          <MenuItems key={item.label} onClick={handleToggle} link={item.link}>
+            {item.label}
           </MenuItems>
         ))}
       </Box>

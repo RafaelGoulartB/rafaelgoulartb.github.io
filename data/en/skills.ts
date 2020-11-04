@@ -1,3 +1,5 @@
+import { IconType } from "react-icons/lib";
+
 import { FaReact, FaNodeJs, FaHtml5, FaCss3 } from 'react-icons/fa'
 import { SiNextDotJs, SiGraphql, SiTypescript } from 'react-icons/si'
 import { ImGit } from 'react-icons/im'
@@ -6,10 +8,8 @@ import getExperienceTime from '../../utils/getExperienceTime'
 export interface SkillsInterface {
   name: string
   expTime: () => string
-  icon?: any
+  icon?: IconType
 }
-
-
 
 const skills: SkillsInterface[] = [
   {

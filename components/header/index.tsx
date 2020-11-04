@@ -73,7 +73,7 @@ const Header: React.FC = props => {
       >
         <Divider />
         {navLinks.map(items => (
-          <MenuItems onClick={handleToggle} link={items.link}>
+          <MenuItems key={items.label} onClick={handleToggle} link={items.link}>
             {items.label}
           </MenuItems>
         ))}

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Flex, Box, Link, Divider } from '@chakra-ui/core'
 import Logo from './logo'
+import { navLinks } from './constants'
 
 interface MenuItem {
   link?: string
@@ -71,18 +72,11 @@ const Header: React.FC = props => {
         marginTop={['20px', '20px', 'auto', 'auto']}
       >
         <Divider />
-        <MenuItems onClick={handleToggle} link="#about">
-          About
-        </MenuItems>
-        <MenuItems onClick={handleToggle} link="#portfolio">
-          Portfolio
-        </MenuItems>
-        <MenuItems onClick={handleToggle} link="#services">
-          Services
-        </MenuItems>
-        <MenuItems onClick={handleToggle} link="#skills">
-          Skills
-        </MenuItems>
+        {navLinks.map(items => (
+          <MenuItems onClick={handleToggle} link={items.link}>
+            {items.label}
+          </MenuItems>
+        ))}
       </Box>
     </Flex>
   )

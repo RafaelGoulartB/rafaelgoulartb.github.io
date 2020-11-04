@@ -1,12 +1,4 @@
-export interface ProjectsInterface {
-  name: string
-  description: string
-  imgSource: string
-  skills: any
-  githubUrl?: string
-  websiteUrl?: string
-  playStoreUrl?: string
-}
+import { ProjectsInterface } from "../types"
 
 const projects: ProjectsInterface[] = [
   {

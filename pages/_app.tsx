@@ -2,7 +2,7 @@ import React from 'react'
 import { AppProps } from 'next/app'
 import Head from 'next/head'
 import { DefaultSeo } from 'next-seo'
-import ThemeContainer from '../contexts/theme/ThemeContainer'
+import ThemeContainer from '../contexts/theme/theme-container'
 import Router from 'next/router'
 
 import '../styles/global.css'

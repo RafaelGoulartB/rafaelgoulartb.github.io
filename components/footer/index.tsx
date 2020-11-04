@@ -18,6 +18,7 @@ const Footer: React.FC = () => {
     >
       {footerSocialLinks.map(item => (
         <PseudoBox
+          key={item.label}
           display="flex"
           alignItems="center"
           _odd={{

@@ -31,7 +31,13 @@ const Item: React.FC<ProjectsInterface> = ({
         alignSelf="center"
       >
         <Box borderRadius="md" boxShadow="0px 3px 3px rgba(0, 0, 0, 0.25)">
-          <Image src={imgSource} width="340" height="240" />
+          <Image
+            src={imgSource}
+            width={340}
+            height={240}
+            alt={name}
+            layout="fixed"
+          />
         </Box>
       </Link>
 

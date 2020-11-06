@@ -41,20 +41,6 @@ const projects: ProjectsInterface[] = [
     websiteUrl: 'https://proffy-rafa.netlify.app/',
     githubUrl: 'https://github.com/RafaelGoulartB/proffy',
   },
-  {
-    name: 'Instapet',
-    description: 'Instapet is a app based on instagram, app developed to learn how to build a social network using React-native and Firebase.',
-    imgSource: '/images/projects/instapet-min.png',
-    skills: ['React Native', 'Firebase'],
-    githubUrl: 'https://github.com/RafaelGoulartB/instapet'
-  },
-  {
-    name: 'Be the Hero',
-    description: '🚀 Project made to help people to find ONGs to contribute, made in the workshop Omnistack at @Rocketseat. Made to learn Node.js, React.js and React Native.',
-    imgSource: '/images/projects/bethehero-min.png',
-    skills: ['React.js', 'React Native', 'Node.js'],
-    githubUrl: 'https://github.com/RafaelGoulartB/be-the-hero',
-  },
 ]
 
 

@@ -41,7 +41,13 @@ const Item: React.FC<ProjectsInterface> = ({
         borderRadius="md"
         mb="8"
       >
-        <Image src={imgSource} width={340} height={240} alt={name} />
+        <Image
+          src={imgSource}
+          width={340}
+          height={240}
+          alt={name}
+          quality={100}
+        />
       </Link>
 
       {/* Content */}

@@ -8,9 +8,7 @@ import projects from '../../data/en/portfolio'
 const Portfolio: React.FC = () => {
   return (
     <Flex as="section" id="portfolio" flexDir="column">
-      <SectionTitle width={['95%', '90%', '80%', '80%']} mx="auto">
-        Portfolio
-      </SectionTitle>
+      <SectionTitle>Portfolio</SectionTitle>
 
       <Flex
         flexWrap="wrap"

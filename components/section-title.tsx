@@ -1,12 +1,8 @@
 import React from 'react'
 
-import { Heading } from '@chakra-ui/core'
+import { Heading, HeadingProps } from '@chakra-ui/core'
 
-interface SectionTitle {
-  title: string
-}
-
-const SectionTitle: React.FC = ({ children }) => {
+const SectionTitle: React.FC<HeadingProps> = ({ children, ...props }) => {
   return (
     <Heading
       as="h4"
@@ -14,6 +10,7 @@ const SectionTitle: React.FC = ({ children }) => {
       fontSize="6xl"
       fontWeight="bold"
       mb="12"
+      {...props}
     >
       {children}
     </Heading>

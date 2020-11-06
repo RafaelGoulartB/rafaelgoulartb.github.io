@@ -55,7 +55,7 @@ const Item: React.FC<ProjectsInterface> = ({
       <Flex flexDir="column" alignItems="flex-start">
         <Flex
           flexDir="column"
-          minH={['none', 'none', 'none', '220px', '220px']}
+          minH={['none', 'none', '280px', '280px', '280px']}
         >
           {/* Name */}
           <Heading as="h2" fontSize="lg" alignSelf="center" textAlign="center">
@@ -66,20 +66,21 @@ const Item: React.FC<ProjectsInterface> = ({
             <FieldLabel>Description</FieldLabel>
             <FieldText>{description}</FieldText>
           </Flex>
+
+          {/* Badge */}
+          {skills && (
+            <Flex flexWrap="wrap">
+              {skills.map(skill => (
+                <PseudoBox key={skill} mr="2" _last={{ mr: '0' }}>
+                  <Badge bg="gray.200" color="white">
+                    {skill}
+                  </Badge>
+                </PseudoBox>
+              ))}
+            </Flex>
+          )}
         </Flex>
 
-        {/* Badge */}
-        {skills && (
-          <Flex flexWrap="wrap">
-            {skills.map(skill => (
-              <PseudoBox key={skill} mr="2" _last={{ mr: '0' }}>
-                <Badge bg="gray.200" color="white">
-                  {skill}
-                </Badge>
-              </PseudoBox>
-            ))}
-          </Flex>
-        )}
         {/* Buttons */}
         <Flex flexDir="row" mt="6">
           {playStoreUrl && (

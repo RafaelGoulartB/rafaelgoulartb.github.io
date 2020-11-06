@@ -1,5 +1,5 @@
 import React from 'react'
-import { Flex, Heading } from '@chakra-ui/core'
+import { Flex } from '@chakra-ui/core'
 import SectionTitle from '../section-title'
 import Item from './item'
 
@@ -8,17 +8,9 @@ import projects from '../../data/en/portfolio'
 const Portfolio: React.FC = () => {
   return (
     <Flex as="section" id="portfolio" flexDir="column">
-      <Heading
-        as="h4"
-        textTransform="uppercase"
-        fontSize="6xl"
-        fontWeight="bold"
-        width={['95%', '90%', '80%', '80%']}
-        mb="12"
-        mx="auto"
-      >
+      <SectionTitle width={['95%', '90%', '80%', '80%']} mx="auto">
         Portfolio
-      </Heading>
+      </SectionTitle>
 
       <Flex
         flexWrap="wrap"

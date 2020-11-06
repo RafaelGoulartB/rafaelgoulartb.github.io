@@ -3,7 +3,7 @@ import { ProjectsInterface } from "../types"
 const projects: ProjectsInterface[] = [
   {
     name: 'Coinbase Website',
-    description: 'Cryptocurrencies & Giftcard Exchange Website - Landing Page made focused in SEO and have a good performance.',
+    description: 'Cryptocurrencies & Giftcard Exchange Website. Landing Page made focused in SEO and have a good performance.',
     imgSource: '/images/projects/coinbase-web-min.png',
     skills: ['Next.js', 'Chakra UI', 'Typescript'],
     websiteUrl: 'https://coinbase-web.vercel.app/',
@@ -11,11 +11,18 @@ const projects: ProjectsInterface[] = [
   },
   {
     name: 'Quantum E-commerce',
-    description: 'E-commerce project that sell tech products, made to show how to build a modern e-commerce application using Next.js and Apollo.',
+    description: 'E-commerce project that sell tech products, made to show how to build a modern commerce application using Next.js and Apollo.',
     imgSource: '/images/projects/quantum-ecommerce-min.png',
     skills: ['Next.js', 'GraphQL', 'Apollo'],
     websiteUrl: 'https://quantum-ecommerce.now.sh/',
     githubUrl: 'https://github.com/RafaelGoulartB/next.js-ecommerce',
+  },
+  {
+    name: 'Coinbase Mobile',
+    description: 'Cryptocurrencies & Giftcard Exchange Mobile project. Application made using Expo and Context API.',
+    imgSource: '/images/projects/coinbase-mobile-min.png',
+    skills: ['React Native', 'Styled-components', 'Typescript'],
+    githubUrl: 'https://github.com/RafaelGoulartB/coinbase-mobile'
   },
   {
     name: 'RPG Dice Roller, Coin Flip, Number Generator',

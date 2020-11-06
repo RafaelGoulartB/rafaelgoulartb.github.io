@@ -77,8 +77,8 @@ const Item: React.FC<ProjectsInterface> = ({
         {skills && (
           <Flex flexWrap="wrap">
             {skills.map(skill => (
-              <PseudoBox mr="2" _last={{ mr: '0' }}>
-                <Badge key={skill} bg="gray.200" color="white">
+              <PseudoBox key={skill} mr="2" _last={{ mr: '0' }}>
+                <Badge bg="gray.200" color="white">
                   {skill}
                 </Badge>
               </PseudoBox>

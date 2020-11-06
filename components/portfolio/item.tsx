@@ -7,7 +7,8 @@ import {
   Button,
   Heading,
   Tooltip,
-  Badge
+  Badge,
+  PseudoBox
 } from '@chakra-ui/core'
 import Image from 'next/image'
 import { FaGithub, FaGooglePlay, FaLink } from 'react-icons/fa'
@@ -23,49 +24,70 @@ const Item: React.FC<ProjectsInterface> = ({
   playStoreUrl
 }) => {
   return (
-    <Flex flexDir={['column', 'column', 'row', 'row', 'row']}>
+    <PseudoBox
+      as="article"
+      display="flex"
+      flexDir="column"
+      alignItems="center"
+      p="8"
+      bg="white"
+      borderRadius="lg"
+      m="3"
+      width="350px"
+      flexGrow={[1, 1, 1, 0, 0]}
+      boxShadow="0px 0px 20px rgb(231, 231, 231)"
+      transition="all 0.6s"
+      _hover={{
+        transform: 'scale(1.03)'
+      }}
+    >
       <Link
         isExternal
         href={websiteUrl || playStoreUrl || githubUrl}
-        mr={['0', '0', '8', '8']}
         alignSelf="center"
+        margin="0"
       >
-        <Box borderRadius="md" boxShadow="0px 3px 3px rgba(0, 0, 0, 0.25)">
-          <Image
-            src={imgSource}
-            width={340}
-            height={240}
-            alt={name}
-            layout="fixed"
-          />
+        <Box borderRadius="md" mb="6">
+          <Image src={imgSource} width={340} height={240} alt={name} />
         </Box>
       </Link>
 
       <Flex flexDir="column" alignItems="flex-start">
-        {/* Name */}
-        <Flex flexDir="row" alignItems="center" mt={['6', '6', '6', '0', '0']}>
-          <FieldLabel>Name</FieldLabel>
-          <FieldText>{name}</FieldText>
-        </Flex>
-        {/* Description */}
-        <Flex flexDir="column" mt="6" mb="3">
-          <FieldLabel>Description</FieldLabel>
-          <FieldText>{description}</FieldText>
+        <Flex
+          flexDir="column"
+          minH={['none', 'none', 'none', '220px', '220px']}
+        >
+          {/* Name */}
+          <Flex
+            flexDir="row"
+            alignItems="center"
+            mt={['6', '6', '6', '0', '0']}
+          >
+            <FieldLabel>Name</FieldLabel>
+            <FieldText>{name}</FieldText>
+          </Flex>
+          {/* Description */}
+          <Flex flexDir="column" mt="6" mb="3">
+            <FieldLabel>Description</FieldLabel>
+            <FieldText>{description}</FieldText>
+          </Flex>
         </Flex>
 
         {/* Badge */}
         {skills && (
-          <Flex mb="6">
+          <Flex flexWrap="wrap">
             {skills.map(skill => (
-              <Badge key={skill} mr="2" bg="gray.200" color="white">
-                {skill}
-              </Badge>
+              <PseudoBox mr="2" _last={{ mr: '0' }}>
+                <Badge key={skill} bg="gray.200" color="white">
+                  {skill}
+                </Badge>
+              </PseudoBox>
             ))}
           </Flex>
         )}
 
         {/* Buttons */}
-        <Flex flexDir="row">
+        <Flex flexDir="row" mt="6">
           {playStoreUrl && (
             <Link isExternal href={playStoreUrl} mr="4">
               <Tooltip
@@ -139,20 +161,24 @@ const Item: React.FC<ProjectsInterface> = ({
           )}
         </Flex>
       </Flex>
-    </Flex>
+    </PseudoBox>
   )
 }
 
 const FieldLabel: React.FC = ({ children }) => {
   return (
-    <Text fontSize="xl" fontWeight="bold" mr="3">
+    <Text fontSize={['lg', 'lg', 'lg', 'xl', 'xl']} fontWeight="bold" mr="3">
       {children}:
     </Text>
   )
 }
 const FieldText: React.FC = ({ children }) => {
   return (
-    <Heading as="h2" fontSize="xl" fontWeight="light">
+    <Heading
+      as="h2"
+      fontSize={['lg', 'lg', 'lg', 'lg', 'lg']}
+      fontWeight="light"
+    >
       {children}
     </Heading>
   )

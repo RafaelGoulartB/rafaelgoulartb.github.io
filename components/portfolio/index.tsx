@@ -16,7 +16,7 @@ const Portfolio: React.FC = () => {
     >
       <SectionTitle>Portfolio</SectionTitle>
 
-      <SimpleGrid columns={[1, 1, 1, 1, 2]} spacing={16}>
+      <Flex flexWrap="wrap">
         {projects.map(project => (
           <Item
             key={project.name}
@@ -29,7 +29,7 @@ const Portfolio: React.FC = () => {
             playStoreUrl={project.playStoreUrl}
           />
         ))}
-      </SimpleGrid>
+      </Flex>
     </Flex>
   )
 }

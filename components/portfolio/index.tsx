@@ -1,5 +1,5 @@
 import React from 'react'
-import { Flex, SimpleGrid } from '@chakra-ui/core'
+import { Flex } from '@chakra-ui/core'
 import SectionTitle from '../section-title'
 import Item from './item'
 

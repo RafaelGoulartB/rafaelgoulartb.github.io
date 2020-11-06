@@ -47,7 +47,7 @@ const Item: React.FC<ProjectsInterface> = ({
         alignSelf="center"
         margin="0"
       >
-        <Box borderRadius="md" mb="6">
+        <Box borderRadius="md" mb="8">
           <Image src={imgSource} width={340} height={240} alt={name} />
         </Box>
       </Link>
@@ -58,16 +58,11 @@ const Item: React.FC<ProjectsInterface> = ({
           minH={['none', 'none', 'none', '220px', '220px']}
         >
           {/* Name */}
-          <Flex
-            flexDir="row"
-            alignItems="center"
-            mt={['6', '6', '6', '0', '0']}
-          >
-            <FieldLabel>Name</FieldLabel>
-            <FieldText>{name}</FieldText>
-          </Flex>
+          <Heading as="h2" fontSize="lg" alignSelf="center" textAlign="center">
+            {name}
+          </Heading>
           {/* Description */}
-          <Flex flexDir="column" mt="6" mb="3">
+          <Flex flexDir="column" mt="8" mb="3">
             <FieldLabel>Description</FieldLabel>
             <FieldText>{description}</FieldText>
           </Flex>
@@ -85,7 +80,6 @@ const Item: React.FC<ProjectsInterface> = ({
             ))}
           </Flex>
         )}
-
         {/* Buttons */}
         <Flex flexDir="row" mt="6">
           {playStoreUrl && (
@@ -167,18 +161,14 @@ const Item: React.FC<ProjectsInterface> = ({
 
 const FieldLabel: React.FC = ({ children }) => {
   return (
-    <Text fontSize={['lg', 'lg', 'lg', 'xl', 'xl']} fontWeight="bold" mr="3">
+    <Text fontSize="lg" fontWeight="bold" mr="3">
       {children}:
     </Text>
   )
 }
 const FieldText: React.FC = ({ children }) => {
   return (
-    <Heading
-      as="h2"
-      fontSize={['lg', 'lg', 'lg', 'lg', 'lg']}
-      fontWeight="light"
-    >
+    <Heading as="h3" fontSize="lg" fontWeight="light">
       {children}
     </Heading>
   )

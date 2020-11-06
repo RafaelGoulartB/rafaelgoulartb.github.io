@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, Text, Box, Flex, Heading, PseudoBox } from '@chakra-ui/core'
+import { Link, Text, Flex, Heading, PseudoBox } from '@chakra-ui/core'
 import Image from 'next/image'
 import { ProjectsInterface } from '../../data/types'
 import ProjectButtons from './project-buttons'
@@ -38,10 +38,10 @@ const Item: React.FC<ProjectsInterface> = ({
         href={websiteUrl || playStoreUrl || githubUrl}
         alignSelf="center"
         margin="0"
+        borderRadius="md"
+        mb="8"
       >
-        <Box borderRadius="md" mb="8">
-          <Image src={imgSource} width={340} height={240} alt={name} />
-        </Box>
+        <Image src={imgSource} width={340} height={240} alt={name} />
       </Link>
 
       {/* Content */}

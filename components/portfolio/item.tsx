@@ -1,16 +1,9 @@
 import React from 'react'
-import {
-  Link,
-  Text,
-  Box,
-  Flex,
-  Heading,
-  Badge,
-  PseudoBox
-} from '@chakra-ui/core'
+import { Link, Text, Box, Flex, Heading, PseudoBox } from '@chakra-ui/core'
 import Image from 'next/image'
 import { ProjectsInterface } from '../../data/types'
 import ProjectButtons from './project-buttons'
+import SkillBadge from './skill-badge'
 
 const Item: React.FC<ProjectsInterface> = ({
   name,
@@ -39,6 +32,7 @@ const Item: React.FC<ProjectsInterface> = ({
         transform: 'scale(1.03)'
       }}
     >
+      {/* Image */}
       <Link
         isExternal
         href={websiteUrl || playStoreUrl || githubUrl}
@@ -50,33 +44,21 @@ const Item: React.FC<ProjectsInterface> = ({
         </Box>
       </Link>
 
+      {/* Content */}
       <Flex flexDir="column" alignItems="flex-start">
         <Flex
           flexDir="column"
           minH={['none', 'none', '280px', '280px', '280px']}
         >
-          {/* Name */}
           <Heading as="h2" fontSize="lg" alignSelf="center" textAlign="center">
             {name}
           </Heading>
-          {/* Description */}
           <Flex flexDir="column" mt="8" mb="3">
             <FieldLabel>Description</FieldLabel>
             <FieldText>{description}</FieldText>
           </Flex>
 
-          {/* Badge */}
-          {skills && (
-            <Flex flexWrap="wrap">
-              {skills.map(skill => (
-                <PseudoBox key={skill} mr="2" _last={{ mr: '0' }}>
-                  <Badge bg="gray.200" color="white">
-                    {skill}
-                  </Badge>
-                </PseudoBox>
-              ))}
-            </Flex>
-          )}
+          <SkillBadge skills={skills} />
         </Flex>
 
         <ProjectButtons

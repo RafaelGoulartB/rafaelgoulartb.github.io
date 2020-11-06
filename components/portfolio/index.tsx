@@ -3,7 +3,7 @@ import { Flex, SimpleGrid } from '@chakra-ui/core'
 import SectionTitle from '../section-title'
 import Item from './item'
 
-import projects from '../../data/en/projects'
+import projects from '../../data/en/portfolio'
 
 const Portfolio: React.FC = () => {
   return (

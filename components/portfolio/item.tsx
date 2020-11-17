@@ -79,7 +79,7 @@ const Item: React.FC<ProjectsInterface> = ({
 
 const FieldLabel: React.FC = ({ children }) => {
   return (
-    <Text fontSize="lg" fontWeight="bold" mr="3">
+    <Text fontSize="lg" fontWeight="bold" mr="3" mb="2">
       {children}:
     </Text>
   )

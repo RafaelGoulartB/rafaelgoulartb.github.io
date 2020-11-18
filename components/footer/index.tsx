@@ -1,5 +1,5 @@
 import React from 'react'
-import { Flex, Box, Link, Tooltip, PseudoBox } from '@chakra-ui/core'
+import { Flex, Box, Link, Tooltip } from '@chakra-ui/react'
 import { footerSocialLinks } from './constants'
 
 const Footer: React.FC = () => {
@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
       px="10px"
     >
       {footerSocialLinks.map(item => (
-        <PseudoBox
+        <Box
           key={item.label}
           display="flex"
           alignItems="center"
@@ -37,7 +37,7 @@ const Footer: React.FC = () => {
               <Box as={item.icon} boxSize="38px" color="white" />
             </Link>
           </Tooltip>
-        </PseudoBox>
+        </Box>
       ))}
     </Flex>
   )

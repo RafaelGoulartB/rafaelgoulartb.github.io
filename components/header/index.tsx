@@ -1,5 +1,5 @@
 import React from 'react'
-import { Flex, Box, Link, Divider } from '@chakra-ui/core'
+import { Flex, Box, Link, Divider } from '@chakra-ui/react'
 import Logo from './logo'
 import { navLinks } from './constants'
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, Text, Flex, Heading, PseudoBox } from '@chakra-ui/core'
+import { Link, Text, Flex, Heading, Box } from '@chakra-ui/react'
 import Image from 'next/image'
 import { ProjectsInterface } from '../../data/types'
 import ProjectButtons from './project-buttons'
@@ -15,7 +15,7 @@ const Item: React.FC<ProjectsInterface> = ({
   playStoreUrl
 }) => {
   return (
-    <PseudoBox
+    <Box
       as="article"
       display="flex"
       flexDir="column"
@@ -73,7 +73,7 @@ const Item: React.FC<ProjectsInterface> = ({
           githubUrl={githubUrl}
         />
       </Flex>
-    </PseudoBox>
+    </Box>
   )
 }
 

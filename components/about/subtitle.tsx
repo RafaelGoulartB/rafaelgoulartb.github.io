@@ -1,5 +1,5 @@
 import React from 'react'
-import { Heading, Text, Flex, Box, Link } from '@chakra-ui/core'
+import { Heading, Text, Flex, Box, Link } from '@chakra-ui/react'
 import { FaCircle } from 'react-icons/fa'
 
 interface SubtitleInterface {

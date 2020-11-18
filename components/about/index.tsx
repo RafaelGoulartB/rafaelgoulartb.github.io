@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text, Flex, Heading, Link, Box, Tooltip } from '@chakra-ui/core'
+import { Text, Flex, Heading, Link, Box, Tooltip } from '@chakra-ui/react'
 import Subtitle from './subtitle'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 

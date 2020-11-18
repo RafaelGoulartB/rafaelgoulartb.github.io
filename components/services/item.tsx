@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Heading, PseudoBox, Text } from '@chakra-ui/core'
+import { Box, Heading, Text } from '@chakra-ui/react'
 import { ServicesInterface } from '../../data/types'
 
 const ServicesItem: React.FC<ServicesInterface> = ({
@@ -8,7 +8,7 @@ const ServicesItem: React.FC<ServicesInterface> = ({
   icon
 }) => {
   return (
-    <PseudoBox
+    <Box
       as="article"
       display="flex"
       flexDir="column"
@@ -32,7 +32,7 @@ const ServicesItem: React.FC<ServicesInterface> = ({
       <Text lineHeight="tall" fontWeight="light" fontSize="lg">
         {description}
       </Text>
-    </PseudoBox>
+    </Box>
   )
 }
 

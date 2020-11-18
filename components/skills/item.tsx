@@ -1,10 +1,10 @@
 import React from 'react'
-import { Box, Text, Heading, PseudoBox } from '@chakra-ui/core'
+import { Box, Text, Heading } from '@chakra-ui/react'
 import { SkillsInterface } from '../../data/types'
 
 const SkillsItem: React.FC<SkillsInterface> = ({ name, expTime, icon }) => {
   return (
-    <PseudoBox
+    <Box
       display="flex"
       as="article"
       flexDir="column"
@@ -28,7 +28,7 @@ const SkillsItem: React.FC<SkillsInterface> = ({ name, expTime, icon }) => {
       <Text lineHeight="tall" fontWeight="light" fontSize="lg">
         {expTime()}
       </Text>
-    </PseudoBox>
+    </Box>
   )
 }
 

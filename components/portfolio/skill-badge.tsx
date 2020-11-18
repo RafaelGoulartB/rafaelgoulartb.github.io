@@ -1,4 +1,4 @@
-import { Badge, Flex, PseudoBox } from '@chakra-ui/core'
+import { Badge, Flex, Box } from '@chakra-ui/react'
 import React from 'react'
 
 interface SkillBadge {
@@ -10,11 +10,11 @@ const SkillBadge: React.FC<SkillBadge> = ({ skills }) => {
     return (
       <Flex flexWrap="wrap">
         {skills.map(skill => (
-          <PseudoBox key={skill} mr="2" _last={{ mr: '0' }}>
+          <Box key={skill} mr="2" _last={{ mr: '0' }}>
             <Badge bg="gray.200" color="white">
               {skill}
             </Badge>
-          </PseudoBox>
+          </Box>
         ))}
       </Flex>
     )

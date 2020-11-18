@@ -1,5 +1,5 @@
 import React from 'react'
-import { Flex } from '@chakra-ui/core'
+import { Flex } from '@chakra-ui/react'
 import SectionTitle from '../section-title'
 import SkillsItem from './item'
 import skills from '../../data/en/skills'

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Grid } from '@chakra-ui/core'
+import { Grid } from '@chakra-ui/react'
 import Header from '../components/header/'
 import About from '../components/about/'
 import Portfolio from '../components/portfolio/'

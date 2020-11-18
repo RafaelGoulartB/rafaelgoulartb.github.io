@@ -1,5 +1,5 @@
 import React from 'react'
-import { Flex } from '@chakra-ui/core'
+import { Flex } from '@chakra-ui/react'
 import SectionTitle from '../section-title'
 import Item from './item'
 
@@ -14,7 +14,7 @@ const Portfolio: React.FC = () => {
         flexWrap="wrap"
         justifyContent="center"
         mx="auto"
-        width={['90%', '90%', '90vw', '90vw', '90vw']}
+        width={{ sm: '90%', lg: '90vw' }}
       >
         {projects.map(project => (
           <Item

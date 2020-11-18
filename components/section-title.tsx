@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Heading, HeadingProps } from '@chakra-ui/core'
+import { Heading, HeadingProps } from '@chakra-ui/react'
 
 const SectionTitle: React.FC<HeadingProps> = ({ children, ...props }) => {
   return (

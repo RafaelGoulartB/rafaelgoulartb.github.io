@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text, Flex, Heading, Link, Box, Tooltip } from '@chakra-ui/core'
+import { Text, Flex, Heading, Link, Box, Tooltip } from '@chakra-ui/react'
 import Subtitle from './subtitle'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 
@@ -10,15 +10,15 @@ const About: React.FC = () => {
     <Flex
       id="about"
       flexDir="column"
-      mt={['32', '32', '40', '40']}
-      width={['95%', '90%', '80%', '80%']}
+      mt={{ sm: '32', lg: '40' }}
+      width={{ sm: '90%', lg: '80%' }}
       mx="auto"
       height="100vh"
     >
       <Heading
         as="h1"
         textTransform="uppercase"
-        fontSize={['3xl', '4xl', '6xl', '6xl']}
+        fontSize={{ sm: '4xl', lg: '6xl' }}
         fontWeight="bold"
         mb="4"
       >
@@ -30,7 +30,7 @@ const About: React.FC = () => {
         fontWeight="light"
         mt="8"
         maxW="840px"
-        fontSize={['md', 'lg', 'lg', 'lg']}
+        fontSize={{ sm: 'md', lg: 'lg' }}
         lineHeight="lg"
       >
         {about.description}
@@ -46,7 +46,7 @@ const About: React.FC = () => {
           color="white"
         >
           <Link isExternal mr="4" href="https://www.github.com/RafaelGoulartB">
-            <Box as={FaGithub} size="38px" color="gray.500" />
+            <Box as={FaGithub} boxSize="38px" color="gray.500" />
           </Link>
         </Tooltip>
         <Tooltip
@@ -58,7 +58,7 @@ const About: React.FC = () => {
           color="white"
         >
           <Link isExternal href="https://www.linkedin.com/in/rafael-goulartb/">
-            <Box as={FaLinkedin} size="38px" color="gray.500" />
+            <Box as={FaLinkedin} boxSize="38px" color="gray.500" />
           </Link>
         </Tooltip>
       </Flex>

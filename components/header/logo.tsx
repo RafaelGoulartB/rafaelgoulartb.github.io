@@ -1,5 +1,5 @@
 import React from 'react'
-import { Heading, Link, Text } from '@chakra-ui/core'
+import { Heading, Link, Text } from '@chakra-ui/react'
 
 const Logo: React.FC = () => {
   return (

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Flex } from '@chakra-ui/core'
+import { Flex } from '@chakra-ui/react'
 import SectionTitle from '../section-title'
 import SkillsItem from './item'
 import skills from '../../data/en/skills'
@@ -10,7 +10,7 @@ const Skills: React.FC = () => {
       as="section"
       id="skills"
       flexDir="column"
-      width={['95%', '90%', '80%', '80%']}
+      width={{ sm: '95%', md: '90%', lg: '80%' }}
       mx="auto"
       mt="48"
     >

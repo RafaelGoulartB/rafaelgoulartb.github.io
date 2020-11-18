@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, Flex, Button, Tooltip } from '@chakra-ui/core'
+import { Link, Flex, Button, Tooltip } from '@chakra-ui/react'
 import { FaGithub, FaGooglePlay, FaLink } from 'react-icons/fa'
 
 interface ProjectButtonsProps {
@@ -26,9 +26,9 @@ const ProjectButtons: React.FC<ProjectButtonsProps> = ({
           >
             <Button
               fontWeight="normal"
-              leftIcon={FaGooglePlay}
+              leftIcon={<FaGooglePlay />}
               bg="blue.500"
-              variantColor="black"
+              colorScheme="black"
               color="white"
               _hover={{
                 textDecoration: 'underline'
@@ -51,9 +51,9 @@ const ProjectButtons: React.FC<ProjectButtonsProps> = ({
           >
             <Button
               fontWeight="normal"
-              leftIcon={FaLink}
+              leftIcon={<FaLink />}
               bg="blue.500"
-              variantColor="black"
+              colorScheme="black"
               color="white"
               _hover={{
                 textDecoration: 'underline'
@@ -76,9 +76,9 @@ const ProjectButtons: React.FC<ProjectButtonsProps> = ({
           >
             <Button
               fontWeight="normal"
-              leftIcon={FaGithub}
+              leftIcon={<FaGithub />}
               bg="gray.500"
-              variantColor="black"
+              colorScheme="black"
               color="white"
             >
               Github

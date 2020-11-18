@@ -1,7 +1,8 @@
 import React from 'react'
-import { Flex, Box, Link, Divider } from '@chakra-ui/react'
+import { Flex, Box, Text, Divider, Link } from '@chakra-ui/react'
 import Logo from './logo'
 import { navLinks } from './constants'
+import ScrollLink from '../scoll-link'
 
 interface MenuItem {
   link?: string
@@ -9,18 +10,19 @@ interface MenuItem {
 }
 
 const MenuItems: React.FC<MenuItem> = ({ children, link, onClick }) => (
-  <Link
-    href={link}
+  <Box
     mt={{ sm: '6', lg: '0' }}
     mr={'36px'}
     display="block"
     fontWeight="medium"
     fontSize={{ sm: 'xl', lg: 'lg' }}
     textTransform="uppercase"
-    onClick={onClick}
+    _hover={{ cursor: 'pointer' }}
   >
-    {children}
-  </Link>
+    <ScrollLink to={link} onClick={onClick}>
+      {children}
+    </ScrollLink>
+  </Box>
 )
 
 const Header: React.FC = props => {
@@ -30,13 +32,14 @@ const Header: React.FC = props => {
   return (
     <Flex
       as="nav"
+      id="#header"
       position="fixed"
       width="100vw"
       align="center"
       justify="space-between"
       wrap="wrap"
       padding="1.5rem"
-      paddingX={{ base: '3em', xl: '15%' }}
+      paddingX={{ base: '2em', xl: '15%' }}
       paddingY="1.5em"
       backgroundColor="gray.500"
       color="white"

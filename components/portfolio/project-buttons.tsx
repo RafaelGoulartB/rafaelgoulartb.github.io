@@ -26,7 +26,7 @@ const ProjectButtons: React.FC<ProjectButtonsProps> = ({
           >
             <Button
               fontWeight="normal"
-              leftIcon={FaGooglePlay}
+              leftIcon={<FaGooglePlay />}
               bg="blue.500"
               colorScheme="black"
               color="white"
@@ -51,7 +51,7 @@ const ProjectButtons: React.FC<ProjectButtonsProps> = ({
           >
             <Button
               fontWeight="normal"
-              leftIcon={FaLink}
+              leftIcon={<FaLink />}
               bg="blue.500"
               colorScheme="black"
               color="white"
@@ -76,7 +76,7 @@ const ProjectButtons: React.FC<ProjectButtonsProps> = ({
           >
             <Button
               fontWeight="normal"
-              leftIcon={FaGithub}
+              leftIcon={<FaGithub />}
               bg="gray.500"
               colorScheme="black"
               color="white"

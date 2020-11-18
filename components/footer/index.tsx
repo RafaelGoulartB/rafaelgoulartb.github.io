@@ -34,7 +34,7 @@ const Footer: React.FC = () => {
             color="black"
           >
             <Link isExternal href={item.link}>
-              <Box as={item.icon} size="38px" color="white" />
+              <Box as={item.icon} boxSize="38px" color="white" />
             </Link>
           </Tooltip>
         </PseudoBox>

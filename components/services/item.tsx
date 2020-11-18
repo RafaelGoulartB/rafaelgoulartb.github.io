@@ -25,7 +25,7 @@ const ServicesItem: React.FC<ServicesInterface> = ({
         transform: 'scale(1.05)'
       }}
     >
-      <Box as={icon} size="50px" color="blue.500" alignSelf="center" />
+      <Box as={icon} boxSize="50px" color="blue.500" alignSelf="center" />
       <Heading as="h2" fontSize="xl" py="5">
         {name}
       </Heading>

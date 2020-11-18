@@ -28,7 +28,7 @@ const ProjectButtons: React.FC<ProjectButtonsProps> = ({
               fontWeight="normal"
               leftIcon={FaGooglePlay}
               bg="blue.500"
-              variantColor="black"
+              colorScheme="black"
               color="white"
               _hover={{
                 textDecoration: 'underline'
@@ -53,7 +53,7 @@ const ProjectButtons: React.FC<ProjectButtonsProps> = ({
               fontWeight="normal"
               leftIcon={FaLink}
               bg="blue.500"
-              variantColor="black"
+              colorScheme="black"
               color="white"
               _hover={{
                 textDecoration: 'underline'
@@ -78,7 +78,7 @@ const ProjectButtons: React.FC<ProjectButtonsProps> = ({
               fontWeight="normal"
               leftIcon={FaGithub}
               bg="gray.500"
-              variantColor="black"
+              colorScheme="black"
               color="white"
             >
               Github

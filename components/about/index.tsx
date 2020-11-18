@@ -46,7 +46,7 @@ const About: React.FC = () => {
           color="white"
         >
           <Link isExternal mr="4" href="https://www.github.com/RafaelGoulartB">
-            <Box as={FaGithub} size="38px" color="gray.500" />
+            <Box as={FaGithub} boxSize="38px" color="gray.500" />
           </Link>
         </Tooltip>
         <Tooltip
@@ -58,7 +58,7 @@ const About: React.FC = () => {
           color="white"
         >
           <Link isExternal href="https://www.linkedin.com/in/rafael-goulartb/">
-            <Box as={FaLinkedin} size="38px" color="gray.500" />
+            <Box as={FaLinkedin} boxSize="38px" color="gray.500" />
           </Link>
         </Tooltip>
       </Flex>

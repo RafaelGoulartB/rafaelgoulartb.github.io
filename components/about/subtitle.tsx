@@ -26,7 +26,7 @@ const Subtitle: React.FC<SubtitleInterface> = ({ email }) => {
 
       <Box
         as={FaCircle}
-        size={['6px', '6px', '8px', '8px', '8px']}
+        boxSize={['6px', '6px', '8px', '8px', '8px']}
         mx={['1', '2', '3', '3']}
       />
 

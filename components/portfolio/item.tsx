@@ -86,7 +86,7 @@ const FieldLabel: React.FC = ({ children }) => {
 }
 const FieldText: React.FC = ({ children }) => {
   return (
-    <Heading as="h3" fontSize="lg" fontWeight="light">
+    <Heading as="h3" fontSize="lg" fontWeight="light" lineHeight="1.4rem">
       {children}
     </Heading>
   )

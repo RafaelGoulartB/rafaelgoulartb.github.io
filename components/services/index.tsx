@@ -11,7 +11,7 @@ const Services: React.FC = () => {
       as="section"
       id="services"
       flexDir="column"
-      width={['95%', '90%', '80%', '80%']}
+      width={{ sm: '95%', md: '90%', lg: '80%' }}
       mx="auto"
       mt="48"
     >

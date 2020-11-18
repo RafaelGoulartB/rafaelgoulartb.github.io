@@ -11,15 +11,12 @@ interface MenuItem {
 const MenuItems: React.FC<MenuItem> = ({ children, link, onClick }) => (
   <Link
     href={link}
-    mt={[6, 6, 0, 0]}
+    mt={{ sm: '6', lg: '0' }}
     mr={'36px'}
     display="block"
     fontWeight="medium"
-    fontSize={['xl', 'xl', 'lg', 'lg']}
+    fontSize={{ sm: 'xl', lg: 'lg' }}
     textTransform="uppercase"
-    _first={{
-      mt: [6, 6, 0, 0, 0]
-    }}
     onClick={onClick}
   >
     {children}
@@ -39,7 +36,7 @@ const Header: React.FC = props => {
       justify="space-between"
       wrap="wrap"
       padding="1.5rem"
-      paddingX={['1.5em', '1.5em', '1.5em', '15%']}
+      paddingX={{ base: '3em', xl: '15%' }}
       paddingY="1.5em"
       backgroundColor="gray.500"
       color="white"
@@ -49,7 +46,7 @@ const Header: React.FC = props => {
       <Flex align="center" mr={5}>
         <Logo />
       </Flex>
-      <Box display={['block', 'block', 'none', 'none']} onClick={handleToggle}>
+      <Box display={{ sm: 'block', lg: 'none' }} onClick={handleToggle}>
         <svg
           fill="white"
           width="22px"
@@ -62,14 +59,12 @@ const Header: React.FC = props => {
       </Box>
 
       <Box
-        display={[
-          show ? 'block' : 'none',
-          show ? 'block' : 'none',
-          'flex',
-          'flex'
-        ]}
-        width={['full', 'full', 'auto', 'auto']}
-        marginTop={['20px', '20px', 'auto', 'auto']}
+        display={{
+          sm: show ? 'block' : 'none',
+          lg: 'flex'
+        }}
+        width={{ sm: 'full', lg: 'auto' }}
+        marginTop={{ sm: '20px', lg: '0' }}
       >
         <Divider />
         {navLinks.map(item => (

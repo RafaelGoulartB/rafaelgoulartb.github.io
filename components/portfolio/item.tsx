@@ -25,7 +25,7 @@ const Item: React.FC<ProjectsInterface> = ({
       borderRadius="lg"
       m="3"
       width="360px"
-      flexGrow={[1, 1, 1, 0, 0]}
+      flexGrow={{ sm: 1, lg: 0 }}
       boxShadow="0px 0px 20px rgb(231, 231, 231)"
       transition="all 0.6s"
       _hover={{
@@ -52,11 +52,14 @@ const Item: React.FC<ProjectsInterface> = ({
 
       {/* Content */}
       <Flex flexDir="column" alignItems="flex-start">
-        <Flex
-          flexDir="column"
-          minH={['none', 'none', '280px', '280px', '280px']}
-        >
-          <Heading as="h2" fontSize="lg" alignSelf="center" textAlign="center">
+        <Flex flexDir="column" minH={{ sm: 'none', lg: '280px' }}>
+          <Heading
+            as="h2"
+            fontSize="lg"
+            alignSelf="center"
+            textAlign="center"
+            lineHeight="1.4rem"
+          >
             {name}
           </Heading>
           <Flex flexDir="column" mt="8" mb="3">

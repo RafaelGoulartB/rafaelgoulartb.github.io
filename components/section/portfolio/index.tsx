@@ -1,9 +1,9 @@
 import React from 'react'
 import { Flex } from '@chakra-ui/react'
-import SectionTitle from '../section-title'
+import SectionTitle from '../../section-title'
 import Item from './item'
 
-import projects from '../../data/en/portfolio'
+import projects from '../../../data/en/portfolio'
 
 const Portfolio: React.FC = () => {
   return (

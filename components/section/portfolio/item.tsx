@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, Text, Flex, Heading, Box } from '@chakra-ui/react'
 import Image from 'next/image'
-import { ProjectsInterface } from '../../data/types'
+import { ProjectsInterface } from '../../../data/types'
 import ProjectButtons from './project-buttons'
 import SkillBadge from './skill-badge'
 

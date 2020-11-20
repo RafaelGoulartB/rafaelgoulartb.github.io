@@ -1,9 +1,9 @@
 import React from 'react'
 import { Flex } from '@chakra-ui/react'
-import SectionTitle from '../section-title'
+import SectionTitle from '../../section-title'
 import ServicesItem from './item'
 
-import services from '../../data/en/services'
+import services from '../../../data/en/services'
 
 const Services: React.FC = () => {
   return (

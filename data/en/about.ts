@@ -1,4 +1,4 @@
-import { AboutInterface } from "../types"
+import { AboutInterface } from "../../components/section/about/types"
 
 const about: AboutInterface = {
   name: 'Rafael Goulart',

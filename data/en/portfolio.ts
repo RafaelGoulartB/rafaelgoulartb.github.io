@@ -1,4 +1,4 @@
-import { ProjectsInterface } from "../types"
+import { ProjectsInterface } from "../../components/section/portfolio/types"
 
 const projects: ProjectsInterface[] = [
   {
@@ -28,7 +28,7 @@ const projects: ProjectsInterface[] = [
     name: 'Next Blog CMS',
     description: 'Blog using GraphCMS to manege content and posts. Made with Next.js and Chakra UI.',
     imgSource: '/images/projects/blog-cms-min.png',
-    skills: ['Next.js', 'Chakra UI', 'CMS','Typescript'],
+    skills: ['Next.js', 'Chakra UI', 'CMS', 'Typescript'],
     websiteUrl: 'https://blogcms.vercel.app/',
     githubUrl: 'https://github.com/RafaelGoulartB/next-blog-cms'
   },

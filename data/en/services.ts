@@ -2,7 +2,7 @@ import { FaServer } from 'react-icons/fa'
 import { GiSmartphone } from 'react-icons/gi'
 import { MdDesktopWindows } from 'react-icons/md'
 import { MdLaptopMac } from 'react-icons/md'
-import { ServicesInterface } from '../types'
+import { ServicesInterface } from '../../components/section/services/types'
 
 const services: ServicesInterface[] = [
   {

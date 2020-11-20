@@ -2,7 +2,7 @@ import { FaReact, FaNodeJs, FaHtml5, FaCss3 } from 'react-icons/fa'
 import { SiNextDotJs, SiGraphql, SiTypescript } from 'react-icons/si'
 import { ImGit } from 'react-icons/im'
 import getExperienceTime from '../../utils/getExperienceTime'
-import { SkillsInterface } from '../types'
+import { SkillsInterface } from '../../components/section/skills/types'
 
 const skills: SkillsInterface[] = [
   {

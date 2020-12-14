@@ -11,6 +11,7 @@ interface MenuItem {
 
 const MenuItems: React.FC<MenuItem> = ({ children, link, onClick }) => (
   <Box
+    color="gray.500"
     mt={{ sm: '6', lg: '0' }}
     mr={'36px'}
     display="block"
@@ -41,7 +42,8 @@ const Header: React.FC = props => {
       padding="1.5rem"
       paddingX={{ base: '2em', xl: '15%' }}
       paddingY="1.5em"
-      backgroundColor="gray.500"
+      backgroundColor="white"
+      boxShadow="0px 0px 3px rgba(44, 44, 44, 0.267);"
       color="white"
       zIndex={999}
       {...props}
@@ -51,7 +53,7 @@ const Header: React.FC = props => {
       </Flex>
       <Box display={{ sm: 'block', lg: 'none' }} onClick={handleToggle}>
         <svg
-          fill="white"
+          fill="#212529"
           width="22px"
           viewBox="0 0 20 20"
           xmlns="http://www.w3.org/2000/svg"

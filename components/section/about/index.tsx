@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text, Flex, Heading, Link, Box, Tooltip } from '@chakra-ui/react'
+import { Text, Flex, Heading, Link, Button, Stack } from '@chakra-ui/react'
 import Subtitle from './subtitle'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 
@@ -36,32 +36,27 @@ const About: React.FC = () => {
         {about.description}
       </Text>
 
-      <Flex flexDir="row" mt="8">
-        <Tooltip
-          hasArrow
-          aria-label="Github Profile"
-          label="Github Profile"
-          placement="top"
-          bg="gray.500"
-          color="white"
+      <Stack direction="row" spacing={5} mt="8">
+        <Link
+          isExternal
+          href="https://www.github.com/RafaelGoulartB"
+          _hover={{ textDecor: 'none' }}
         >
-          <Link isExternal mr="4" href="https://www.github.com/RafaelGoulartB">
-            <Box as={FaGithub} boxSize="38px" color="gray.500" />
-          </Link>
-        </Tooltip>
-        <Tooltip
-          hasArrow
-          aria-label="Linkedin Profile"
-          label="Linkedin Profile"
-          placement="top"
-          bg="gray.500"
-          color="white"
+          <Button leftIcon={<FaGithub />} colorScheme="blue" variant="solid">
+            My Github
+          </Button>
+        </Link>
+
+        <Link
+          isExternal
+          href="https://www.linkedin.com/in/rafael-goulartb/"
+          _hover={{ textDecor: 'none' }}
         >
-          <Link isExternal href="https://www.linkedin.com/in/rafael-goulartb/">
-            <Box as={FaLinkedin} boxSize="38px" color="gray.500" />
-          </Link>
-        </Tooltip>
-      </Flex>
+          <Button leftIcon={<FaLinkedin />} colorScheme="blue" variant="solid">
+            My Linkedin
+          </Button>
+        </Link>
+      </Stack>
     </Flex>
   )
 }

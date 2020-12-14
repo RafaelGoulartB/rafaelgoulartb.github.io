@@ -16,7 +16,12 @@ const ProjectButtons: React.FC<ProjectButtonsProps> = ({
   return (
     <Flex flexDir="row" mt="6">
       {playStoreUrl && (
-        <Link isExternal href={playStoreUrl} mr="4">
+        <Link
+          isExternal
+          href={playStoreUrl}
+          mr="4"
+          _hover={{ textDecor: 'none' }}
+        >
           <Tooltip
             hasArrow
             aria-label="See at Play Store"
@@ -30,9 +35,6 @@ const ProjectButtons: React.FC<ProjectButtonsProps> = ({
               bg="blue.500"
               colorScheme="black"
               color="white"
-              _hover={{
-                textDecoration: 'underline'
-              }}
             >
               Play Store
             </Button>
@@ -41,7 +43,12 @@ const ProjectButtons: React.FC<ProjectButtonsProps> = ({
       )}
 
       {websiteUrl && (
-        <Link isExternal href={websiteUrl} mr="4">
+        <Link
+          isExternal
+          href={websiteUrl}
+          mr="4"
+          _hover={{ textDecor: 'none' }}
+        >
           <Tooltip
             hasArrow
             aria-label="See Website Online"
@@ -55,9 +62,6 @@ const ProjectButtons: React.FC<ProjectButtonsProps> = ({
               bg="blue.500"
               colorScheme="black"
               color="white"
-              _hover={{
-                textDecoration: 'underline'
-              }}
             >
               Website
             </Button>
@@ -66,7 +70,7 @@ const ProjectButtons: React.FC<ProjectButtonsProps> = ({
       )}
 
       {githubUrl && (
-        <Link isExternal href={githubUrl} mr="4">
+        <Link isExternal href={githubUrl} mr="4" _hover={{ textDecor: 'none' }}>
           <Tooltip
             hasArrow
             aria-label="Github Repository"

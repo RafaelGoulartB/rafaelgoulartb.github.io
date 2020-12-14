@@ -14,7 +14,7 @@ const Portfolio: React.FC = () => {
         flexWrap="wrap"
         justifyContent="center"
         mx="auto"
-        width={{ sm: '90%', lg: '90vw' }}
+        width={{ sm: '90%', lg: '90vw', xl: '80%' }}
       >
         {projects.map(project => (
           <Item

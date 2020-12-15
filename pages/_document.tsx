@@ -17,7 +17,7 @@ class MyDocument extends Document {
             as="font"
             crossOrigin=""
           />
-          <meta title="Rafael Goulart - FullStack Developer Freelancer" />
+          <meta title="Rafael Goulart - Frontend Developer" />
           <link rel="manifest" href="/manifest.json" />
           <meta name="theme-color" content="#fafafa" />
           <link rel="icon" href="/favicons/favicon.ico" />

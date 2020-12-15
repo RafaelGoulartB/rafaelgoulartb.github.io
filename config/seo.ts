@@ -1,7 +1,7 @@
 
 const seoConfig = {
   title: "Rafael Goulart - Frontend Developer Portfolio",
-  description: "I'm Rafael Goulart, Freelancer Frontend Developer and I work with React.js, Next.js, React Native and Node.js.",
+  description: "I'm Rafael Goulart, Frontend Developer and I work with React.js, Next.js, React Native and Node.js.",
   openGraph: {
     url: 'https://rafaelgoulartb.vercel.app/',
     title: 'Rafael Goulart Portfolio - Next.js, Typescript and React Native',

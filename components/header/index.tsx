@@ -3,6 +3,7 @@ import { Flex, Box, Divider } from '@chakra-ui/react'
 import Logo from './logo'
 import { navLinks } from './constants'
 import ScrollLink from '../scoll-link'
+import { motion } from 'framer-motion'
 
 interface MenuItem {
   link?: string
@@ -30,6 +31,8 @@ const Header: React.FC = props => {
   const [show, setShow] = React.useState(false)
   const handleToggle = () => setShow(!show)
 
+  const transition = { delay: 0.2, duration: 0.9 }
+
   return (
     <Flex
       as="nav"
@@ -49,35 +52,75 @@ const Header: React.FC = props => {
       {...props}
     >
       <Flex align="center" mr={5}>
-        <Logo />
-      </Flex>
-      <Box display={{ sm: 'block', lg: 'none' }} onClick={handleToggle}>
-        <svg
-          fill="#212529"
-          width="22px"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          transition={transition}
+          variants={{
+            hidden: { x: -150, opacity: 0 },
+            visible: {
+              x: 0,
+              opacity: 1
+            }
+          }}
         >
-          <title>Menu</title>
-          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-        </svg>
+          <Logo />
+        </motion.div>
+      </Flex>
+
+      <Box display={{ sm: 'block', lg: 'none' }} onClick={handleToggle}>
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          transition={transition}
+          variants={{
+            hidden: { x: 150, opacity: 0 },
+            visible: {
+              x: 0,
+              opacity: 1
+            }
+          }}
+        >
+          <svg
+            fill="#212529"
+            width="22px"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>Menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+          </svg>
+        </motion.div>
       </Box>
 
-      <Box
-        display={{
-          sm: show ? 'block' : 'none',
-          lg: 'flex'
+      <motion.div
+        initial="hidden"
+        animate="visible"
+        transition={transition}
+        variants={{
+          hidden: { y: -150, opacity: 0 },
+          visible: {
+            y: 0,
+            opacity: 1
+          }
         }}
-        width={{ sm: 'full', lg: 'auto' }}
-        marginTop={{ sm: '20px', lg: '0' }}
       >
-        <Divider />
-        {navLinks.map(item => (
-          <MenuItems key={item.label} onClick={handleToggle} link={item.link}>
-            {item.label}
-          </MenuItems>
-        ))}
-      </Box>
+        <Box
+          display={{
+            sm: show ? 'block' : 'none',
+            lg: 'flex'
+          }}
+          width={{ sm: 'full', lg: 'auto' }}
+          marginTop={{ sm: '20px', lg: '0' }}
+        >
+          <Divider />
+          {navLinks.map(item => (
+            <MenuItems key={item.label} onClick={handleToggle} link={item.link}>
+              {item.label}
+            </MenuItems>
+          ))}
+        </Box>
+      </motion.div>
     </Flex>
   )
 }

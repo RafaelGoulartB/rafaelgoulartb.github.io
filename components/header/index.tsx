@@ -69,7 +69,7 @@ const Header: React.FC = props => {
       </Flex>
 
       <Box display={{ sm: 'block', lg: 'none' }} onClick={handleToggle}>
-        <motion.div
+        <motion.svg
           initial="hidden"
           animate="visible"
           transition={transition}
@@ -80,47 +80,44 @@ const Header: React.FC = props => {
               opacity: 1
             }
           }}
+          fill="#212529"
+          width="22px"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            fill="#212529"
-            width="22px"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title>Menu</title>
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-          </svg>
-        </motion.div>
+          <title>Menu</title>
+          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+        </motion.svg>
       </Box>
 
-      <motion.div
-        initial="hidden"
-        animate="visible"
-        transition={transition}
-        variants={{
-          hidden: { y: -150, opacity: 0 },
-          visible: {
-            y: 0,
-            opacity: 1
-          }
+      <Box
+        display={{
+          sm: show ? 'block' : 'none',
+          lg: 'flex'
         }}
+        width={{ sm: 'full', lg: 'auto' }}
+        marginTop={{ sm: '20px', lg: '0' }}
       >
-        <Box
-          display={{
-            sm: show ? 'block' : 'none',
-            lg: 'flex'
-          }}
-          width={{ sm: 'full', lg: 'auto' }}
-          marginTop={{ sm: '20px', lg: '0' }}
-        >
-          <Divider />
-          {navLinks.map(item => (
+        <Divider />
+        {navLinks.map(item => (
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            transition={transition}
+            variants={{
+              hidden: { y: -150, opacity: 0 },
+              visible: {
+                y: 0,
+                opacity: 1
+              }
+            }}
+          >
             <MenuItems key={item.label} onClick={handleToggle} link={item.link}>
               {item.label}
             </MenuItems>
-          ))}
-        </Box>
-      </motion.div>
+          </motion.div>
+        ))}
+      </Box>
     </Flex>
   )
 }

@@ -3,6 +3,7 @@ import { Flex, Box, Divider } from '@chakra-ui/react'
 import Logo from './logo'
 import { navLinks } from './constants'
 import ScrollLink from '../scoll-link'
+import { motion } from 'framer-motion'
 
 interface MenuItem {
   link?: string
@@ -30,6 +31,8 @@ const Header: React.FC = props => {
   const [show, setShow] = React.useState(false)
   const handleToggle = () => setShow(!show)
 
+  const transition = { delay: 0.2, duration: 0.9 }
+
   return (
     <Flex
       as="nav"
@@ -49,10 +52,34 @@ const Header: React.FC = props => {
       {...props}
     >
       <Flex align="center" mr={5}>
-        <Logo />
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          transition={transition}
+          variants={{
+            hidden: { x: -150, opacity: 0 },
+            visible: {
+              x: 0,
+              opacity: 1
+            }
+          }}
+        >
+          <Logo />
+        </motion.div>
       </Flex>
+
       <Box display={{ sm: 'block', lg: 'none' }} onClick={handleToggle}>
-        <svg
+        <motion.svg
+          initial="hidden"
+          animate="visible"
+          transition={transition}
+          variants={{
+            hidden: { x: 150, opacity: 0 },
+            visible: {
+              x: 0,
+              opacity: 1
+            }
+          }}
           fill="#212529"
           width="22px"
           viewBox="0 0 20 20"
@@ -60,7 +87,7 @@ const Header: React.FC = props => {
         >
           <title>Menu</title>
           <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-        </svg>
+        </motion.svg>
       </Box>
 
       <Box
@@ -73,9 +100,22 @@ const Header: React.FC = props => {
       >
         <Divider />
         {navLinks.map(item => (
-          <MenuItems key={item.label} onClick={handleToggle} link={item.link}>
-            {item.label}
-          </MenuItems>
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            transition={transition}
+            variants={{
+              hidden: { y: -150, opacity: 0 },
+              visible: {
+                y: 0,
+                opacity: 1
+              }
+            }}
+          >
+            <MenuItems key={item.label} onClick={handleToggle} link={item.link}>
+              {item.label}
+            </MenuItems>
+          </motion.div>
         ))}
       </Box>
     </Flex>

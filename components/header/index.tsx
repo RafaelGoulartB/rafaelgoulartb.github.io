@@ -101,6 +101,7 @@ const Header: React.FC = props => {
         <Divider />
         {navLinks.map(item => (
           <motion.div
+            key={item.label}
             initial="hidden"
             animate="visible"
             transition={transition}
